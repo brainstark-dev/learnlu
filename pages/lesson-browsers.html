@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="forest">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="What is a web browser? Learn how Chrome, Firefox, Edge and Safari work. Tabs, bookmarks, incognito mode, and essential shortcuts — explained for beginners."/>
+  <title>Web Browsers Explained — Chrome, Firefox, Edge, Safari — LearnLu</title>
+  <!-- Google Analytics GA4 — Replace G-XXXXXXXXXX with your real Measurement ID -->
+  <!-- Get your ID at: analytics.google.com -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <link rel="sitemap" type="application/xml" href="../sitemap.xml"/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content="@LearnLu"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://learnlu.com/pages/lesson-browsers.html"/>
+  <meta property="og:site_name" content="LearnLu"/>
+  <meta property="og:description" content="What is a web browser? Learn how Chrome, Firefox, Edge and Safari work. Tabs, bookmarks, incognito mode, and essential shortcuts — explained for beginners."/>
+  <meta property="og:title" content="Web Browsers Explained — Chrome, Firefox, Edge, Safari — LearnLu"/>
+  <link rel="canonical" href="https://learnlu.com/pages/lesson-browsers.html"/>
+  <link rel="stylesheet" href="../assets/css/style.css"/>
+  <link rel="stylesheet" href="../assets/css/images.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔵</text></svg>">
+</head>
+<body>
+
+<div class="reading-progress"><div class="reading-fill"></div></div>
+
+<nav id="navbar">
+  <div class="nav-row-top">
+    <a href="../index.html" class="nav-logo">
+      <div class="logo-mark">💻</div>
+      Learn<span class="accent">Lu</span>
+    </a>
+    <div class="nav-right">
+      <a href="lessons.html" class="btn btn-primary btn-sm">All Lessons →</a>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+  <ul class="nav-links nav-row-bottom">
+    <li><a href="../index.html">🏠 Home</a></li>
+    <li><a href="lesson-hardware.html">🖥️ Hardware</a></li>
+    <li><a href="lesson-internet.html">🌐 Internet</a></li>
+    <li><a href="faq.html">❓ FAQ</a></li>
+    <li><a href="about.html">ℹ️ About</a></li>
+  </ul>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="../index.html">Home</a>
+  <a href="lessons.html">All Lessons</a>
+  <a href="lesson-internet.html">Internet</a>
+  <a href="faq.html">FAQ</a>
+</div>
+
+<!-- Hero -->
+<section style="padding:calc(var(--nav-h) + 48px) 0 40px; background:linear-gradient(135deg,var(--blue-lt) 0%,var(--off-white) 100%);">
+  <div class="container" style="max-width:900px;">
+    <div style="display:flex;align-items:center;gap:8px;font-size:0.82rem;color:var(--text-3);margin-bottom:16px;">
+      <a href="../index.html" style="color:var(--text-3);">Home</a> ›
+      <a href="lessons.html" style="color:var(--text-3);">Lessons</a> ›
+      <span style="color:var(--blue);">Browsers</span>
+    </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px;">
+      <span class="badge badge-beginner">Beginner</span>
+      <span class="badge badge-blue">⏱ 8 min read</span>
+      <span class="badge badge-teal">🧠 2 Mini Quizzes</span>
+    </div>
+    <h1 style="font-size:clamp(1.8rem,4vw,3rem);margin-bottom:14px;">Web Browsers — Chrome, Firefox, Edge &amp; Safari Explained</h1>
+    <p style="font-size:1.1rem;color:var(--text-2);max-width:640px;">Your browser is the window through which you see the entire internet. This lesson explains what browsers actually do, which one to use, and the features that will make your internet experience faster and safer.</p>
+  </div>
+</section>
+
+<div class="container" style="max-width:900px;">
+  <div class="ad-zone">📢 Advertisement — Google AdSense (728×90)</div>
+</div>
+
+<div class="container" style="max-width:900px;padding-bottom:100px;">
+  <div class="article-layout">
+    <article class="article-content">
+
+      <div class="image-type-badges">
+        <span class="img-badge img-badge-photo">📸 Real Photos</span>
+        <span class="img-badge img-badge-svg">📊 SVG Diagrams</span>
+        <span class="img-badge img-badge-icon">🎨 Icon Visuals</span>
+      </div>
+
+      <!-- Hero photo -->
+      <div class="lesson-hero-photo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="280" viewBox="0 0 400 220" style="display:block" preserveAspectRatio="xMidYMid slice">
+          <rect width="400" height="220" fill="#E0F2FE"/>
+          <rect x="40" y="30" width="320" height="200" rx="8" fill="#fff" stroke="#0284C7" stroke-width="1.5" opacity=".7"/>
+          <rect x="40" y="30" width="320" height="32" rx="8" fill="#0284C7" opacity=".15"/>
+          <rect x="40" y="50" width="320" height="12" fill="#0284C7" opacity=".15"/>
+          <rect x="56" y="36" width="120" height="20" rx="10" fill="#fff" stroke="#0284C7" stroke-width="1" opacity=".7"/>
+          <text x="116" y="51" text-anchor="middle" font-family="system-ui" font-size="10" fill="#075985">learnlu.com</text>
+          <circle cx="330" cy="46" r="8" fill="#0284C7" opacity=".2"/>
+          <text x="330" y="51" text-anchor="middle" font-size="10">🔵</text>
+          <rect x="56" y="75" width="288" height="12" rx="3" fill="#0284C7" opacity=".1"/>
+          <rect x="56" y="95" width="240" height="10" rx="3" fill="#0284C7" opacity=".08"/>
+          <rect x="56" y="113" width="200" height="10" rx="3" fill="#0284C7" opacity=".08"/>
+          <circle cx="200" cy="165" r="28" fill="#0284C7" opacity=".1"/>
+          <text x="200" y="172" text-anchor="middle" font-size="32" dominant-baseline="middle">🔵</text>
+          <rect x="130" y="193" width="140" height="24" rx="12" fill="#0284C7" opacity=".12"/>
+          <text x="200" y="209" text-anchor="middle" font-family="system-ui" font-size="11" font-weight="600" fill="#075985">Web Browser</text>
+        </svg>
+        <div class="photo-caption-overlay">
+          <strong>Your web browser — the window to the internet</strong>
+          Every website you visit is loaded, interpreted and displayed by your browser
+        </div>
+      </div>
+      <p class="unsplash-credit">Illustration · LearnLu</p>
+
+      <h2 id="what-is-browser">What is a Web Browser?</h2>
+      <p>A web browser is a program that lets you visit websites. When you type <strong>google.com</strong> or click a link, your browser fetches that page from a server somewhere in the world, reads the code, and turns it into the visual page you see on screen.</p>
+
+      <div class="example-box analogy">
+        <p>Think of the internet as a massive library with billions of books. Your browser is the librarian — you tell it what you want, it goes and finds it, and brings it back for you to read. Without a browser, you cannot access the library at all.</p>
+      </div>
+
+      <!-- Icon visual: 4 main browsers -->
+      <div class="icon-explain-grid">
+        <div class="icon-explain-card">
+          <div class="icon-explain-icon" style="background:#E8F0FE;font-size:22px">🔵</div>
+          <div><h4>Google Chrome</h4><p>The most popular browser in the world. Fast, works on all devices. Made by Google.</p></div>
+        </div>
+        <div class="icon-explain-card">
+          <div class="icon-explain-icon" style="background:#FFF0EA;font-size:22px">🦊</div>
+          <div><h4>Mozilla Firefox</h4><p>Free and open-source. Excellent privacy protection. Great alternative to Chrome.</p></div>
+        </div>
+        <div class="icon-explain-card">
+          <div class="icon-explain-icon" style="background:#E0F2FE;font-size:22px">🌐</div>
+          <div><h4>Microsoft Edge</h4><p>Built into Windows. Based on Chrome engine. Fast and saves battery on laptops.</p></div>
+        </div>
+        <div class="icon-explain-card">
+          <div class="icon-explain-icon" style="background:#DCFCE7;font-size:22px">🍎</div>
+          <div><h4>Apple Safari</h4><p>Built into all iPhones, iPads and Macs. Very fast and power efficient on Apple devices.</p></div>
+        </div>
+      </div>
+
+      <h2 id="how-browser-works">How a Browser Works</h2>
+      <p>Every time you visit a website, your browser goes through these steps in under a second:</p>
+
+      <!-- SVG Diagram: How browser loads a page -->
+      <div class="diagram-container">
+        <div class="diagram-title">
+          <span class="diagram-badge">📊 SVG Diagram</span>
+          How your browser loads a webpage
+        </div>
+        <svg width="100%" viewBox="0 0 640 140" xmlns="http://www.w3.org/2000/svg" style="display:block">
+          <defs><marker id="abr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#0284C7" stroke-width="1.5" stroke-linecap="round"/></marker></defs>
+          <rect x="10" y="30" width="100" height="50" rx="10" fill="#E0F2FE" stroke="#0284C7" stroke-width="1.5"/>
+          <text x="60" y="52" text-anchor="middle" font-family="Fraunces,serif" font-size="12" font-weight="700" fill="#075985">You type</text>
+          <text x="60" y="68" text-anchor="middle" font-size="10" fill="#0369A1">google.com</text>
+          <rect x="148" y="30" width="100" height="50" rx="10" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+          <text x="198" y="52" text-anchor="middle" font-family="Fraunces,serif" font-size="12" font-weight="700" fill="#92400E">DNS looks</text>
+          <text x="198" y="68" text-anchor="middle" font-size="10" fill="#92400E">up the address</text>
+          <rect x="286" y="30" width="100" height="50" rx="10" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+          <text x="336" y="52" text-anchor="middle" font-family="Fraunces,serif" font-size="12" font-weight="700" fill="#14532D">Browser</text>
+          <text x="336" y="68" text-anchor="middle" font-size="10" fill="#166534">requests page</text>
+          <rect x="424" y="30" width="100" height="50" rx="10" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+          <text x="474" y="52" text-anchor="middle" font-family="Fraunces,serif" font-size="12" font-weight="700" fill="#2E1065">Server</text>
+          <text x="474" y="68" text-anchor="middle" font-size="10" fill="#4C1D95">sends code back</text>
+          <rect x="562" y="30" width="68" height="50" rx="10" fill="#E0F2FE" stroke="#0284C7" stroke-width="1.5"/>
+          <text x="596" y="52" text-anchor="middle" font-family="Fraunces,serif" font-size="12" font-weight="700" fill="#075985">You see</text>
+          <text x="596" y="68" text-anchor="middle" font-size="10" fill="#0369A1">the website</text>
+          <line x1="110" y1="55" x2="146" y2="55" stroke="#0284C7" stroke-width="1.5" marker-end="url(#abr)"/>
+          <line x1="248" y1="55" x2="284" y2="55" stroke="#0284C7" stroke-width="1.5" marker-end="url(#abr)"/>
+          <line x1="386" y1="55" x2="422" y2="55" stroke="#0284C7" stroke-width="1.5" marker-end="url(#abr)"/>
+          <line x1="524" y1="55" x2="560" y2="55" stroke="#0284C7" stroke-width="1.5" marker-end="url(#abr)"/>
+          <text x="320" y="120" text-anchor="middle" font-size="10" fill="#718096">All 4 steps happen in under 1 second every time you visit a website</text>
+        </svg>
+      </div>
+
+      <h2 id="browser-features">Key Browser Features</h2>
+      <p>Every browser has the same essential features. Once you learn them in one browser, they work the same in all others.</p>
+
+      <table class="compare-table">
+        <thead><tr><th>Feature</th><th>What it does</th><th>Shortcut</th></tr></thead>
+        <tbody>
+          <tr><td>📑 <strong>Tabs</strong></td><td>Open multiple websites at once in one window</td><td>Ctrl + T (new tab)</td></tr>
+          <tr><td>⭐ <strong>Bookmarks</strong></td><td>Save websites to visit again easily</td><td>Ctrl + D</td></tr>
+          <tr><td>🔒 <strong>Incognito Mode</strong></td><td>Browse without saving history or cookies</td><td>Ctrl + Shift + N</td></tr>
+          <tr><td>🔄 <strong>Refresh</strong></td><td>Reload the current page</td><td>F5 or Ctrl + R</td></tr>
+          <tr><td>⬅️ <strong>Back / Forward</strong></td><td>Go to the previous or next page</td><td>Alt + ← / Alt + →</td></tr>
+          <tr><td>🔍 <strong>Find on Page</strong></td><td>Search for a word on the current page</td><td>Ctrl + F</td></tr>
+          <tr><td>➕ <strong>Zoom In/Out</strong></td><td>Make text bigger or smaller</td><td>Ctrl + Plus / Ctrl + Minus</td></tr>
+        </tbody>
+      </table>
+
+      <!-- Quiz 1 -->
+      <div class="quiz-box" id="quiz1">
+        <h4>What does incognito mode do?</h4>
+        <button class="quiz-option" data-correct="false" onclick="answerQuiz('quiz1',this)">It makes you completely anonymous online</button>
+        <button class="quiz-option" data-correct="true" onclick="answerQuiz('quiz1',this)">It stops your browser saving your history and cookies</button>
+        <button class="quiz-option" data-correct="false" onclick="answerQuiz('quiz1',this)">It blocks all websites from tracking you</button>
+        <button class="quiz-option" data-correct="false" onclick="answerQuiz('quiz1',this)">It speeds up your internet connection</button>
+        <div class="quiz-feedback" id="quiz1-feedback"></div>
+      </div>
+
+      <h2 id="which-browser">Which Browser Should You Use?</h2>
+      <p>All major browsers are free and safe. Here is a simple guide to choosing:</p>
+
+      <div class="highlight-box">
+        <p>📌 <strong>Recommendation for most beginners:</strong> Use <strong>Google Chrome</strong> — it is the most widely supported, works on Windows, Mac, Android and iPhone, and most websites are tested on it first. If you care about privacy, use <strong>Firefox</strong>.</p>
+      </div>
+
+      <div class="example-box tip">
+        <p>You can have <strong>multiple browsers installed</strong> at the same time and switch between them. Many people use Chrome for everyday browsing and Firefox for banking or shopping (better privacy).</p>
+      </div>
+
+      <!-- Quiz 2 -->
+      <div class="quiz-box" id="quiz2">
+        <h4>What is the most popular web browser in the world?</h4>
+        <button class="quiz-option" data-correct="false" onclick="answerQuiz('quiz2',this)">Microsoft Edge</button>
+        <button class="quiz-option" data-correct="false" onclick="answerQuiz('quiz2',this)">Mozilla Firefox</button>
+        <button class="quiz-option" data-correct="true" onclick="answerQuiz('quiz2',this)">Google Chrome</button>
+        <button class="quiz-option" data-correct="false" onclick="answerQuiz('quiz2',this)">Apple Safari</button>
+        <div class="quiz-feedback" id="quiz2-feedback"></div>
+      </div>
+
+      <h2 id="key-takeaways">Key Takeaways</h2>
+      <ul class="checklist">
+        <li class="check-item"><span class="check-icon">✓</span>A browser is the program you use to visit websites — Chrome, Firefox, Edge, Safari</li>
+        <li class="check-item"><span class="check-icon">✓</span>All browsers do the same job — fetch, read, and display websites</li>
+        <li class="check-item"><span class="check-icon">✓</span>Tabs let you have many websites open at once</li>
+        <li class="check-item"><span class="check-icon">✓</span>Bookmarks save sites you want to return to</li>
+        <li class="check-item"><span class="check-icon">✓</span>Incognito mode hides your browsing from your own browser history</li>
+        <li class="check-item"><span class="check-icon">✓</span>Chrome is the best choice for most beginners</li>
+      </ul>
+
+      <div class="lesson-nav">
+        <a href="lesson-wifi-setup.html" class="btn-nav btn-nav-prev">← WiFi Setup</a>
+        <a href="lesson-email.html" class="btn-nav btn-nav-next">Next: Email →</a>
+      </div>
+
+    </article>
+
+    <!-- Sidebar -->
+    <aside class="article-sidebar">
+      <div class="sidebar-toc">
+        <h5>📋 In This Lesson</h5>
+        <a href="#what-is-browser">What is a Browser?</a>
+        <a href="#how-browser-works">How It Works</a>
+        <a href="#browser-features">Key Features</a>
+        <a href="#which-browser">Which to Choose</a>
+        <a href="#key-takeaways">Key Takeaways</a>
+      </div>
+
+      <div class="sidebar-related-photos">
+        <h5>📸 Related Lessons</h5>
+        <a href="lesson-hardware.html" class="related-photo-item">
+          <div class="related-photo-thumb">
+            <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="220" fill="#DCFCE7"/><text x="200" y="120" text-anchor="middle" font-size="60" dominant-baseline="middle">🖥️</text></svg>
+          </div>
+          <div class="related-photo-info"><div class="rp-title">Computer Hardware</div><div class="rp-meta">Lesson 1 · 15 min</div></div>
+        </a>
+        <a href="lesson-internet.html" class="related-photo-item">
+          <div class="related-photo-thumb">
+            <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="220" fill="#E0F2FE"/><text x="200" y="120" text-anchor="middle" font-size="60" dominant-baseline="middle">🌐</text></svg>
+          </div>
+          <div class="related-photo-info"><div class="rp-title">How the Internet Works</div><div class="rp-meta">Lesson 10 · 12 min</div></div>
+        </a>
+        <a href="lesson-google-search.html" class="related-photo-item">
+          <div class="related-photo-thumb">
+            <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="220" fill="#FFFBEA"/><text x="200" y="120" text-anchor="middle" font-size="60" dominant-baseline="middle">🔍</text></svg>
+          </div>
+          <div class="related-photo-info"><div class="rp-title">Google Search Tips</div><div class="rp-meta">Lesson 14 · 6 min</div></div>
+        </a>
+      </div>
+
+      <div class="ad-zone tall">📢 Ad (300×250)</div>
+
+      <div class="next-lesson-box">
+        <h5>Next Lesson</h5>
+        <p>Learn how to send, receive and organise emails like a pro.</p>
+        <a href="lesson-email.html" class="btn btn-primary" style="width:100%;text-align:center;display:block;">Email for Beginners →</a>
+      </div>
+    </aside>
+
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom-bar" style="flex-direction:column;gap:8px;">
+      <div style="display:flex;gap:20px;flex-wrap:wrap;justify-content:center;">
+        <a href="privacy.html" style="font-size:0.78rem;color:rgba(255,255,255,0.5);">Privacy Policy</a>
+        <a href="terms.html" style="font-size:0.78rem;color:rgba(255,255,255,0.5);">Terms of Service</a>
+        <a href="disclaimer.html" style="font-size:0.78rem;color:rgba(255,255,255,0.5);">Disclaimer</a>
+        <a href="contact.html" style="font-size:0.78rem;color:rgba(255,255,255,0.5);">Contact</a>
+        <a href="about.html" style="font-size:0.78rem;color:rgba(255,255,255,0.5);">About</a>
+      </div>
+      <p>© 2026 LearnLu. All rights reserved.</p>
+      <p style="font-size:0.78rem; color:rgba(255,255,255,0.45); margin-top:4px;">Created &amp; maintained by <strong style="color:rgba(255,255,255,0.65); font-weight:600;">Taofeek Habeebullah Richard</strong> &mdash; Founder, LearnLu</p>
+      <p style="font-size:0.78rem;opacity:0.45;">Free computer education for everyone.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+<script>
+function answerQuiz(qid, btn) {
+  const box = document.getElementById(qid);
+  if (box.dataset.done) return;
+  box.dataset.done = '1';
+  const correct = btn.dataset.correct === 'true';
+  btn.classList.add(correct ? 'correct' : 'wrong');
+  if (!correct) box.querySelectorAll('[data-correct="true"]').forEach(b => b.classList.add('correct'));
+  const fb = document.getElementById(qid + '-feedback');
+  if (fb) { fb.textContent = correct ? '🎉 Correct! Well done!' : '❌ Not quite — the correct answer is highlighted.'; fb.style.color = correct ? 'var(--green)' : 'var(--red)'; fb.style.display = 'block'; }
+}
+</script>
+<script src="../assets/js/theme-switcher.js"></script>
+<script src="../assets/js/cookie-consent.js"></script>
+</body>
+</html>

@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="forest">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="LearnLu — Free beginner lessons. Learn what a computer is, how to use it, the internet, typing, files, and more. Clear explanations with real-world examples."/>
+  <meta name="keywords" content="computer basics, learn computers, beginner beginner lessons, how to use a computer, what is a CPU, internet for beginners"/>
+  <meta property="og:title" content="LearnLu — Free Computer Lessons for Beginners"/>
+  <meta property="og:type" content="website"/>
+  <title>LearnLu — Free Computer Lessons for Beginners</title>
+  <!-- Google Analytics GA4 — Replace G-XXXXXXXXXX with your real Measurement ID -->
+  <!-- Get your ID at: analytics.google.com -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml"/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content="@LearnLu"/>
+  <meta property="og:description" content="LearnLu — Free beginner lessons. Learn what a computer is, how to use it, the internet, typing, files, and more. Clear explanations with real-world examples."/>
+  <link rel="canonical" href="https://learnlu.com/"/>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+  <link rel="stylesheet" href="assets/css/images.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+</head>
+<body>
+
+<!-- ======= NAVBAR ======= -->
+<nav id="navbar">
+  <!-- Row 1: Logo + CTA -->
+  <div class="nav-row-top">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-mark">💻</div>
+      Learn<span class="accent">Lu</span>
+    </a>
+    <div class="nav-right">
+      <a href="pages/lessons.html" class="btn btn-primary btn-sm">All Lessons →</a>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+  <!-- Row 2: Page links -->
+  <ul class="nav-links nav-row-bottom">
+    <li><a href="index.html" class="active">🏠 Home</a></li>
+    <li><a href="pages/lesson-hardware.html">🖥️ Hardware</a></li>
+    <li><a href="pages/lesson-internet.html">🌐 Internet</a></li>
+    <li><a href="pages/faq.html">❓ FAQ</a></li>
+    <li><a href="pages/about.html">ℹ️ About</a></li>
+  </ul>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="pages/lessons.html">All Lessons</a>
+  <a href="pages/lesson-hardware.html">Hardware</a>
+  <a href="pages/lesson-internet.html">Internet</a>
+  <a href="pages/faq.html">FAQ</a>
+  <a href="pages/about.html">About</a>
+</div>
+
+<!-- ======= HERO ======= -->
+<section id="hero">
+  <div class="hero-dots"></div>
+  <div class="hero-blob"></div>
+  <div class="hero-blob-2"></div>
+  <div class="container">
+    <div class="grid-2" style="align-items:center; gap:60px; padding: 60px 0;">
+      <div class="hero-content" style="padding:0;">
+        <div class="hero-eyebrow"><span class="dot"></span> 100% Free · No Sign-Up Needed</div>
+        <h1 class="hero-title">Computers Made <em>Simple</em> for Everyone</h1>
+        <p class="hero-sub">Never touched a computer before? No problem. We explain everything from scratch — with everyday examples, zero jargon, and fun mini-quizzes to test yourself.</p>
+        <div class="hero-actions">
+          <a href="pages/lessons.html" class="btn btn-primary btn-lg">Start Your First Lesson →</a>
+          <a href="#topics" class="btn btn-ghost btn-lg">Browse Topics</a>
+        </div>
+        <div style="display:flex; gap:32px; margin-top:40px; flex-wrap:wrap;">
+          <div>
+            <div style="font-family:var(--font-d); font-size:1.8rem; font-weight:900; color:var(--blue);" data-count="24" data-suffix="+">0+</div>
+            <div style="font-size:0.8rem; color:var(--text-3);">Free Lessons</div>
+          </div>
+          <div>
+            <div style="font-family:var(--font-d); font-size:1.8rem; font-weight:900; color:var(--orange);" data-count="10" data-suffix="k+">0k+</div>
+            <div style="font-size:0.8rem; color:var(--text-3);">Students Helped</div>
+          </div>
+          <div>
+            <div style="font-family:var(--font-d); font-size:1.8rem; font-weight:900; color:var(--teal);" data-count="0" data-suffix="Cost">Free</div>
+            <div style="font-size:0.8rem; color:var(--text-3);">Always Free</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-illustration">
+        <div class="computer-graphic">
+          <div class="screen">
+            <span class="prompt">user@computer:~$ </span><span class="cmd">welcome</span><br>
+            <span class="output">✓ Welcome to LearnLu!</span><br>
+            <span class="output">✓ Loading your first lesson...</span><br>
+            <span class="prompt">user@computer:~$ </span><span class="cmd">start learning</span><br>
+            <span class="output">🚀 Let's go! No experience needed.</span><br>
+            <span class="prompt">user@computer:~$ </span><span class="cursor"></span>
+          </div>
+          <div class="keyboard-row">
+            <div class="key">Q</div><div class="key">W</div><div class="key">E</div>
+            <div class="key">R</div><div class="key highlight">T</div>
+            <div class="key">Y</div><div class="key">P</div>
+          </div>
+          <div class="keyboard-row">
+            <div class="key">A</div><div class="key">S</div><div class="key">D</div>
+            <div class="key highlight">F</div><div class="key">G</div>
+            <div class="key">H</div><div class="key">L</div>
+          </div>
+          <div class="keyboard-row">
+            <div class="key wide">Shift</div>
+            <div class="key">Z</div><div class="key">X</div><div class="key">C</div>
+            <div class="key highlight">V</div><div class="key wide">Enter</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= AD ZONE ======= -->
+<div class="container">
+  <div class="ad-zone">📢 Advertisement — Replace with Google AdSense Code (728×90)</div>
+</div>
+
+<!-- ======= TOPICS ======= -->
+<section class="section-sm" id="topics" style="background:var(--off-white); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+  <div class="container">
+    <div class="text-center reveal" style="margin-bottom:32px;">
+      <span class="section-label">Browse by Topic</span>
+      <h2>What Do You Want to Learn?</h2>
+    </div>
+    <div class="topics-strip reveal">
+      <a href="pages/lesson-hardware.html" class="topic-card">
+        <div class="topic-icon">🖥️</div>
+        <div class="topic-name">Hardware</div>
+        <div class="topic-count">4 lessons</div>
+      </a>
+      <a href="pages/lesson-internet.html" class="topic-card">
+        <div class="topic-icon">🌐</div>
+        <div class="topic-name">Internet</div>
+        <div class="topic-count">4 lessons</div>
+      </a>
+      <a href="pages/lessons.html" class="topic-card">
+        <div class="topic-icon">📂</div>
+        <div class="topic-name">Files & Folders</div>
+        <div class="topic-count">3 lessons</div>
+      </a>
+      <a href="pages/lessons.html" class="topic-card">
+        <div class="topic-icon">⌨️</div>
+        <div class="topic-name">Typing</div>
+        <div class="topic-count">2 lessons</div>
+      </a>
+      <a href="pages/lessons.html" class="topic-card">
+        <div class="topic-icon">🛡️</div>
+        <div class="topic-name">Safety Online</div>
+        <div class="topic-count">3 lessons</div>
+      </a>
+      <a href="pages/lessons.html" class="topic-card">
+        <div class="topic-icon">🔧</div>
+        <div class="topic-name">Troubleshoot</div>
+        <div class="topic-count">3 lessons</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ======= WHY LEARN ======= -->
+<section class="section">
+  <div class="container">
+    <div class="grid-2" style="align-items:center; gap:80px;">
+      <div class="reveal">
+        <span class="section-label">Why Learn Computers?</span>
+        <h2>Computers Open Doors in Every Career</h2>
+        <div class="divider"></div>
+        <p style="margin-bottom:16px;">In today's world, almost every job requires at least basic computer skills. Whether you want to apply for a job online, run a small business, talk to family abroad, or start a career in tech — it all starts with learning the basics.</p>
+        <p style="margin-bottom:28px;">The good news? Computers are not as complicated as they look. Once you understand a few key ideas, everything else starts to make sense.</p>
+        <div class="checklist">
+          <div class="check-item"><div class="check-icon">✓</div><span class="check-text">Apply for jobs and fill out forms online</span></div>
+          <div class="check-item"><div class="check-icon">✓</div><span class="check-text">Start an online business or freelance career</span></div>
+          <div class="check-item"><div class="check-icon">✓</div><span class="check-text">Video-call family and friends anywhere in the world</span></div>
+          <div class="check-item"><div class="check-icon">✓</div><span class="check-text">Access free education, banking, and government services</span></div>
+          <div class="check-item"><div class="check-icon">✓</div><span class="check-text">Protect yourself from online scams and viruses</span></div>
+        </div>
+      </div>
+      <div class="reveal delay-2">
+        <div class="grid-2" style="gap:16px;">
+          <div class="card card-blue">
+            <div class="card-icon">🎓</div>
+            <h4>Beginner Friendly</h4>
+            <p class="text-sm" style="margin-top:6px;">Every lesson starts from zero. No prior experience needed — ever.</p>
+          </div>
+          <div class="card card-orange">
+            <div class="card-icon">🌍</div>
+            <h4>Real Examples</h4>
+            <p class="text-sm" style="margin-top:6px;">Every concept explained with everyday life comparisons you'll immediately understand.</p>
+          </div>
+          <div class="card card-teal">
+            <div class="card-icon">🧠</div>
+            <h4>Mini Quizzes</h4>
+            <p class="text-sm" style="margin-top:6px;">Test yourself after each section to make sure the idea really sticks.</p>
+          </div>
+          <div class="card card-purple">
+            <div class="card-icon">📱</div>
+            <h4>Works on Any Device</h4>
+            <p class="text-sm" style="margin-top:6px;">Learn from your phone, tablet, or computer — any screen, any time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= FEATURED LESSONS ======= -->
+<section class="section" style="background:var(--off-white); border-top:1px solid var(--border);">
+  <div class="container">
+    <div class="flex-between reveal" style="margin-bottom:40px; flex-wrap:wrap; gap:16px;">
+      <div>
+        <span class="section-label">Start Here</span>
+        <h2>Featured Lessons</h2>
+      </div>
+      <a href="pages/lessons.html" class="btn btn-outline">View All Lessons →</a>
+    </div>
+    <div class="grid-3 reveal">
+
+      <a href="pages/lesson-hardware.html" class="lesson-card" data-title="What is a Computer?" data-tags="hardware basics cpu">
+        <div class="lesson-card-photo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="160" viewBox="0 0 400 220" style="display:block;" preserveAspectRatio="xMidYMid slice">
+  <rect width="400" height="220" fill="#DCFCE7"/>
+  <rect x="0" y="0" width="400" height="220" fill="#DCFCE7" opacity="0.6"/>
+  <!-- subtle grid pattern -->
+  <line x1="0" y1="55" x2="400" y2="55" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="110" x2="400" y2="110" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="165" x2="400" y2="165" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="100" y1="0" x2="100" y2="220" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="200" y1="0" x2="200" y2="220" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="300" y1="0" x2="300" y2="220" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <!-- icon circle -->
+  <circle cx="200" cy="100" r="52" fill="#14532D" opacity="0.12"/>
+  <circle cx="200" cy="100" r="40" fill="#14532D" opacity="0.1"/>
+  <text x="200" y="116" text-anchor="middle" font-size="52" dominant-baseline="middle">🖥️</text>
+  <!-- label pill -->
+  <rect x="130" y="155" width="140" height="28" rx="14" fill="#14532D" opacity="0.15"/>
+  <text x="200" y="174" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#14532D">Computer Hardware</text>
+</svg>
+          <div class="card-badge-overlay"><span>Beginner · Lesson 1</span></div>
+        </div>
+        <div class="lesson-body">
+          <h4>What is a Computer? A Complete Beginner's Guide</h4>
+          <p>Learn the four main parts of a computer — input, output, processing, and storage — with real photos.</p>
+        </div>
+        <div class="lesson-footer">
+          <span class="lesson-meta">⏱ 8 min · 3 Quizzes</span>
+          <span class="btn btn-sm btn-primary">Read →</span>
+        </div>
+      </a>
+
+      <a href="pages/lesson-internet.html" class="lesson-card" data-title="How Does the Internet Work?" data-tags="internet wifi network">
+        <div class="lesson-card-photo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="160" viewBox="0 0 400 220" style="display:block;" preserveAspectRatio="xMidYMid slice">
+  <rect width="400" height="220" fill="#E0F2FE"/>
+  <rect x="0" y="0" width="400" height="220" fill="#E0F2FE" opacity="0.6"/>
+  <!-- subtle grid pattern -->
+  <line x1="0" y1="55" x2="400" y2="55" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="110" x2="400" y2="110" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="165" x2="400" y2="165" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="100" y1="0" x2="100" y2="220" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="200" y1="0" x2="200" y2="220" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="300" y1="0" x2="300" y2="220" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <!-- icon circle -->
+  <circle cx="200" cy="100" r="52" fill="#075985" opacity="0.12"/>
+  <circle cx="200" cy="100" r="40" fill="#075985" opacity="0.1"/>
+  <text x="200" y="116" text-anchor="middle" font-size="52" dominant-baseline="middle">🌐</text>
+  <!-- label pill -->
+  <rect x="130" y="155" width="140" height="28" rx="14" fill="#075985" opacity="0.15"/>
+  <text x="200" y="174" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#075985">Internet & Networks</text>
+</svg>
+          <div class="card-badge-overlay"><span>Beginner · Lesson 10</span></div>
+        </div>
+        <div class="lesson-body">
+          <h4>How Does the Internet Work? Explained Simply</h4>
+          <p>Understand what the internet really is, how websites get to your screen, and what WiFi actually does.</p>
+        </div>
+        <div class="lesson-footer">
+          <span class="lesson-meta">⏱ 10 min · 3 Quizzes</span>
+          <span class="btn btn-sm btn-primary">Read →</span>
+        </div>
+      </a>
+
+      <a href="pages/lesson-files-folders.html" class="lesson-card" data-title="Files and Folders Explained" data-tags="files folders storage">
+        <div class="lesson-card-photo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="160" viewBox="0 0 400 220" style="display:block;" preserveAspectRatio="xMidYMid slice">
+  <rect width="400" height="220" fill="#FFF7ED"/>
+  <rect x="0" y="0" width="400" height="220" fill="#FFF7ED" opacity="0.6"/>
+  <!-- subtle grid pattern -->
+  <line x1="0" y1="55" x2="400" y2="55" stroke="#92400E" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="110" x2="400" y2="110" stroke="#92400E" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="165" x2="400" y2="165" stroke="#92400E" stroke-width="0.4" opacity="0.15"/>
+  <line x1="100" y1="0" x2="100" y2="220" stroke="#92400E" stroke-width="0.4" opacity="0.15"/>
+  <line x1="200" y1="0" x2="200" y2="220" stroke="#92400E" stroke-width="0.4" opacity="0.15"/>
+  <line x1="300" y1="0" x2="300" y2="220" stroke="#92400E" stroke-width="0.4" opacity="0.15"/>
+  <!-- icon circle -->
+  <circle cx="200" cy="100" r="52" fill="#92400E" opacity="0.12"/>
+  <circle cx="200" cy="100" r="40" fill="#92400E" opacity="0.1"/>
+  <text x="200" y="116" text-anchor="middle" font-size="52" dominant-baseline="middle">📂</text>
+  <!-- label pill -->
+  <rect x="130" y="155" width="140" height="28" rx="14" fill="#92400E" opacity="0.15"/>
+  <text x="200" y="174" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#92400E">Files & Folders</text>
+</svg>
+          <div class="card-badge-overlay"><span>Beginner · Lesson 7</span></div>
+        </div>
+        <div class="lesson-body">
+          <h4>Files and Folders — Your Computer's Filing Cabinet</h4>
+          <p>Learn how to save, organise, and find your documents and photos — just like sorting physical papers.</p>
+        </div>
+        <div class="lesson-footer">
+          <span class="lesson-meta">⏱ 7 min · 2 Quizzes</span>
+          <span class="btn btn-sm btn-primary">Read →</span>
+        </div>
+      </a>
+
+      <a href="pages/lesson-ram-storage.html" class="lesson-card" data-title="What is RAM and Storage?" data-tags="ram memory storage hard drive">
+        <div class="lesson-card-photo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="160" viewBox="0 0 400 220" style="display:block;" preserveAspectRatio="xMidYMid slice">
+  <rect width="400" height="220" fill="#EDE9FE"/>
+  <rect x="0" y="0" width="400" height="220" fill="#EDE9FE" opacity="0.6"/>
+  <!-- subtle grid pattern -->
+  <line x1="0" y1="55" x2="400" y2="55" stroke="#5B21B6" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="110" x2="400" y2="110" stroke="#5B21B6" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="165" x2="400" y2="165" stroke="#5B21B6" stroke-width="0.4" opacity="0.15"/>
+  <line x1="100" y1="0" x2="100" y2="220" stroke="#5B21B6" stroke-width="0.4" opacity="0.15"/>
+  <line x1="200" y1="0" x2="200" y2="220" stroke="#5B21B6" stroke-width="0.4" opacity="0.15"/>
+  <line x1="300" y1="0" x2="300" y2="220" stroke="#5B21B6" stroke-width="0.4" opacity="0.15"/>
+  <!-- icon circle -->
+  <circle cx="200" cy="100" r="52" fill="#5B21B6" opacity="0.12"/>
+  <circle cx="200" cy="100" r="40" fill="#5B21B6" opacity="0.1"/>
+  <text x="200" y="116" text-anchor="middle" font-size="52" dominant-baseline="middle">💾</text>
+  <!-- label pill -->
+  <rect x="130" y="155" width="140" height="28" rx="14" fill="#5B21B6" opacity="0.15"/>
+  <text x="200" y="174" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#5B21B6">RAM & Storage</text>
+</svg>
+          <div class="card-badge-overlay"><span>Beginner · Lesson 2</span></div>
+        </div>
+        <div class="lesson-body">
+          <h4>RAM vs Storage — What's the Difference?</h4>
+          <p>Understand the difference between computer memory and hard drive space using a desk-and-cabinet analogy.</p>
+        </div>
+        <div class="lesson-footer">
+          <span class="lesson-meta">⏱ 6 min · 2 Quizzes</span>
+          <span class="btn btn-sm btn-primary">Read →</span>
+        </div>
+      </a>
+
+      <a href="pages/lesson-keyboard-mouse.html" class="lesson-card" data-title="Keyboard Shortcuts" data-tags="keyboard shortcuts typing ctrl">
+        <div class="lesson-card-photo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="160" viewBox="0 0 400 220" style="display:block;" preserveAspectRatio="xMidYMid slice">
+  <rect width="400" height="220" fill="#FFFBEA"/>
+  <rect x="0" y="0" width="400" height="220" fill="#FFFBEA" opacity="0.6"/>
+  <!-- subtle grid pattern -->
+  <line x1="0" y1="55" x2="400" y2="55" stroke="#7a5000" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="110" x2="400" y2="110" stroke="#7a5000" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="165" x2="400" y2="165" stroke="#7a5000" stroke-width="0.4" opacity="0.15"/>
+  <line x1="100" y1="0" x2="100" y2="220" stroke="#7a5000" stroke-width="0.4" opacity="0.15"/>
+  <line x1="200" y1="0" x2="200" y2="220" stroke="#7a5000" stroke-width="0.4" opacity="0.15"/>
+  <line x1="300" y1="0" x2="300" y2="220" stroke="#7a5000" stroke-width="0.4" opacity="0.15"/>
+  <!-- icon circle -->
+  <circle cx="200" cy="100" r="52" fill="#7a5000" opacity="0.12"/>
+  <circle cx="200" cy="100" r="40" fill="#7a5000" opacity="0.1"/>
+  <text x="200" y="116" text-anchor="middle" font-size="52" dominant-baseline="middle">⌨️</text>
+  <!-- label pill -->
+  <rect x="130" y="155" width="140" height="28" rx="14" fill="#7a5000" opacity="0.15"/>
+  <text x="200" y="174" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#7a5000">Keyboard & Mouse</text>
+</svg>
+          <div class="card-badge-overlay"><span>Beginner · Lesson 5</span></div>
+        </div>
+        <div class="lesson-body">
+          <h4>20 Keyboard Shortcuts Every Beginner Must Know</h4>
+          <p>Copy, paste, undo, save — learn the shortcuts that will save you hours every week.</p>
+        </div>
+        <div class="lesson-footer">
+          <span class="lesson-meta">⏱ 5 min · 2 Quizzes</span>
+          <span class="btn btn-sm btn-primary">Read →</span>
+        </div>
+      </a>
+
+      <a href="pages/lesson-online-safety.html" class="lesson-card" data-title="Online Safety" data-tags="safety password scam virus">
+        <div class="lesson-card-photo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="160" viewBox="0 0 400 220" style="display:block;" preserveAspectRatio="xMidYMid slice">
+  <rect width="400" height="220" fill="#DCFCE7"/>
+  <rect x="0" y="0" width="400" height="220" fill="#DCFCE7" opacity="0.6"/>
+  <!-- subtle grid pattern -->
+  <line x1="0" y1="55" x2="400" y2="55" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="110" x2="400" y2="110" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="165" x2="400" y2="165" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="100" y1="0" x2="100" y2="220" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="200" y1="0" x2="200" y2="220" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="300" y1="0" x2="300" y2="220" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <!-- icon circle -->
+  <circle cx="200" cy="100" r="52" fill="#14532D" opacity="0.12"/>
+  <circle cx="200" cy="100" r="40" fill="#14532D" opacity="0.1"/>
+  <text x="200" y="116" text-anchor="middle" font-size="52" dominant-baseline="middle">🔐</text>
+  <!-- label pill -->
+  <rect x="130" y="155" width="140" height="28" rx="14" fill="#14532D" opacity="0.15"/>
+  <text x="200" y="174" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#14532D">Password Security</text>
+</svg>
+          <div class="card-badge-overlay"><span>Beginner · Lesson 19</span></div>
+        </div>
+        <div class="lesson-body">
+          <h4>Staying Safe Online — Passwords, Scams &amp; Viruses</h4>
+          <p>Protect yourself from hackers, fake emails, and scam websites with these simple but powerful habits.</p>
+        </div>
+        <div class="lesson-footer">
+          <span class="lesson-meta">⏱ 9 min · 2 Quizzes</span>
+          <span class="btn btn-sm btn-primary">Read →</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======= AD ZONE MID ======= -->
+<div class="container">
+  <div class="ad-zone tall">📢 Advertisement — Replace with Google AdSense Code (300×250)</div>
+</div>
+
+<!-- ======= QUICK LESSON PREVIEW ======= -->
+<section class="section">
+  <div class="container">
+    <div class="text-center reveal" style="margin-bottom:56px;">
+      <span class="section-label">Taste of a Lesson</span>
+      <h2>Here's How We Teach: Simple, Clear &amp; Fun</h2>
+      <p style="max-width:500px; margin:10px auto 0;">Every lesson on LearnLu follows this format so you always know what to expect.</p>
+    </div>
+    <div class="grid-2" style="gap:48px; align-items:start;">
+      <div class="reveal">
+        <h3 style="margin-bottom:20px; color:var(--blue);">📖 Concept: What is a CPU?</h3>
+        <p style="margin-bottom:16px;">CPU stands for <strong>Central Processing Unit</strong>. It is the main chip inside your computer that does all the calculations and thinking.</p>
+
+        <div class="analogy-banner">
+          <p>"The CPU is like the <strong>brain</strong> of the computer. Just like your brain processes information and tells your body what to do, the CPU processes instructions and tells the computer what to do."</p>
+          <span class="author">— Simple Analogy</span>
+        </div>
+
+        <div class="example-box real">
+          <p>When you click the "Save" button in Microsoft Word, the CPU receives that instruction, figures out what it means, and then sends commands to store your document onto the hard drive. All of this happens in <em>milliseconds</em>.</p>
+        </div>
+
+        <div class="example-box analogy">
+          <p>Imagine a chef in a restaurant kitchen. The chef (CPU) receives orders (instructions), decides how to cook each dish (processes data), and sends finished food to the tables (output). The faster the chef works, the more orders they can handle — just like a faster CPU handles more tasks.</p>
+        </div>
+      </div>
+
+      <div class="reveal delay-2">
+        <h3 style="margin-bottom:20px; color:var(--orange);">🧠 Test Yourself!</h3>
+        <div class="quiz-box">
+          <h4>What does CPU stand for?</h4>
+          <button class="quiz-option" data-correct="false">Computer Power Unit</button>
+          <button class="quiz-option" data-correct="true">Central Processing Unit</button>
+          <button class="quiz-option" data-correct="false">Core Program Utility</button>
+          <button class="quiz-option" data-correct="false">Connected Processing Unit</button>
+          <div class="quiz-feedback"></div>
+        </div>
+
+        <div style="margin-top:28px;">
+          <h4 style="margin-bottom:14px; color:var(--text);">Key Facts to Remember</h4>
+          <div class="checklist">
+            <div class="check-item"><div class="check-icon">✓</div><span class="check-text">CPU = the "brain" of the computer</span></div>
+            <div class="check-item"><div class="check-icon">✓</div><span class="check-text">Measured in GHz — higher = faster</span></div>
+            <div class="check-item"><div class="check-icon">✓</div><span class="check-text">Modern CPUs have multiple "cores" (like having multiple brains)</span></div>
+            <div class="check-item"><div class="check-icon">✓</div><span class="check-text">Common brands: Intel and AMD</span></div>
+          </div>
+        </div>
+
+        <div class="example-box tip">
+          <p>When buying a computer, look for at least a <strong>dual-core</strong> processor for basic tasks like browsing and documents. A <strong>quad-core</strong> or higher is better for video and multitasking.</p>
+        </div>
+
+        <a href="pages/lesson-hardware.html" class="btn btn-primary" style="margin-top:20px;">Continue This Lesson →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= STATS ======= -->
+<section class="section-sm" style="background:var(--blue); color:var(--white);">
+  <div class="container">
+    <div class="grid-4 reveal">
+      <div class="stat-card">
+        <div class="stat-num" style="color:var(--white);" data-count="24" data-suffix="+">0+</div>
+        <div class="stat-label" style="color:rgba(255,255,255,0.7);">Free Lessons</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num" style="color:var(--yellow);" data-count="10" data-suffix="k+">0k+</div>
+        <div class="stat-label" style="color:rgba(255,255,255,0.7);">Students Helped</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num" style="color:var(--white);" data-count="100" data-suffix="%">0%</div>
+        <div class="stat-label" style="color:rgba(255,255,255,0.7);">Beginner Friendly</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num" style="color:var(--teal);" data-count="0" data-suffix="Cost">Free</div>
+        <div class="stat-label" style="color:rgba(255,255,255,0.7);">No Cost, Ever</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= FAQ PREVIEW ======= -->
+<section class="section">
+  <div class="container">
+    <div class="text-center reveal" style="margin-bottom:48px;">
+      <span class="section-label">Quick Answers</span>
+      <h2>Frequently Asked Questions</h2>
+      <p style="max-width:480px; margin:10px auto 0;">Answers to the questions beginners ask most often.</p>
+    </div>
+    <div class="faq-wrap reveal">
+
+      <div class="faq-item">
+        <button class="faq-q">What exactly is a computer?<span class="faq-icon">+</span></button>
+        <div class="faq-a">
+          A computer is an electronic machine that can receive information (called <em>input</em>), store it, process it (do calculations and make decisions), and then show you results (called <em>output</em>).
+          <div class="highlight">🌍 <strong>Real-world example:</strong> When you type a message on WhatsApp (input), the computer stores it temporarily, processes it into data packets, and displays it on your friend's screen (output). That whole process takes less than a second!</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">What is the difference between hardware and software?<span class="faq-icon">+</span></button>
+        <div class="faq-a">
+          <strong>Hardware</strong> is the physical parts of a computer you can touch — the screen, keyboard, mouse, and the chips inside. <strong>Software</strong> is the programs and apps that run on those physical parts — like Microsoft Word, Chrome, or WhatsApp.<br><br>
+          <div class="highlight">🧠 <strong>Think of it like this:</strong> A guitar (hardware) is useless without music (software). The hardware is the instrument, and the software is the music it plays.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">What is RAM and why does it matter?<span class="faq-icon">+</span></button>
+        <div class="faq-a">
+          RAM stands for <strong>Random Access Memory</strong>. It is your computer's short-term working memory — it holds everything you are currently doing, like open browser tabs or documents.<br><br>
+          <div class="highlight">🌍 <strong>Example:</strong> Imagine your desk at work. Your desk represents RAM — it's where you lay out everything you're currently working on. Your filing cabinet (hard drive) is where you store finished work. A bigger desk (more RAM) means you can work on more things at once without slowing down.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">What is the difference between the internet and WiFi?<span class="faq-icon">+</span></button>
+        <div class="faq-a">
+          The <strong>internet</strong> is a global network of billions of computers connected together — it is the actual system of roads and highways. <strong>WiFi</strong> is just the wireless technology your device uses to connect to that network — it is the on-ramp that gets you onto those roads.<br><br>
+          <div class="highlight">🧠 <strong>Think of it like this:</strong> The internet is the national highway system. WiFi is your car's on-ramp. You need WiFi (or a cable) to access the internet, but WiFi without an internet connection won't let you reach any websites.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">Why does my computer slow down over time?<span class="faq-icon">+</span></button>
+        <div class="faq-a">
+          Computers slow down for several common reasons: (1) <strong>Too many programs running at once</strong> — each one uses RAM. (2) <strong>Full storage</strong> — when your hard drive is almost full, the computer struggles. (3) <strong>Too many startup programs</strong> — many apps launch automatically when you turn on your computer. (4) <strong>Viruses or malware</strong> — harmful programs running in the background.<br><br>
+          <div class="highlight">✅ <strong>Quick fix:</strong> Restart your computer regularly, delete files you don't need, and uninstall apps you never use.</div>
+        </div>
+      </div>
+
+    </div>
+    <div class="text-center" style="margin-top:32px;" class="reveal">
+      <a href="pages/faq.html" class="btn btn-outline">See All 10 FAQs →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ======= CTA / SUBSCRIBE ======= -->
+<section class="section-sm">
+  <div class="container">
+    <div class="cta-section reveal">
+      <span class="section-label" style="color:rgba(255,255,255,0.7); justify-content:center; display:flex;">📬 Free Newsletter</span>
+      <h2>Get a New Computer Lesson Every Week</h2>
+      <p>Join 10,000+ beginners who learn one new computer skill each week. Free, simple, and takes 5 minutes to read.</p>
+      <form class="sub-form" id="subForm">
+        <input type="email" placeholder="your@email.com" required/>
+        <button type="submit">Subscribe Free</button>
+      </form>
+      <p style="color:rgba(255,255,255,0.5); font-size:0.78rem; margin-top:14px; position:relative; z-index:1;">No spam. Unsubscribe anytime.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======= FOOTER ======= -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo"><div class="logo-mark">💻</div>Learn<span style="color:var(--blue);">Lu</span></div>
+        <p>Free, beginner-friendly beginner lessons with real-world examples. No jargon. No cost. Just clear, simple learning for everyone.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Lessons</h5>
+        <a href="pages/lesson-hardware.html">Computer Hardware</a>
+        <a href="pages/lesson-internet.html">The Internet</a>
+        <a href="pages/lessons.html">Files &amp; Folders</a>
+        <a href="pages/lessons.html">Keyboard Shortcuts</a>
+        <a href="pages/lessons.html">Staying Safe Online</a>
+      </div>
+      <div class="footer-col">
+        <h5>Learn</h5>
+        <a href="pages/lessons.html">All Lessons</a>
+        <a href="pages/faq.html">FAQ</a>
+        <a href="pages/about.html">About Us</a>
+        <a href="pages/contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h5>Legal</h5>
+        <a href="pages/privacy.html">Privacy Policy</a>
+        <a href="pages/terms.html">Terms of Service</a>
+        <a href="pages/disclaimer.html">Disclaimer</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p style="color:rgba(255,255,255,0.5);">© 2026 LearnLu. All rights reserved.</p>
+      <p style="font-size:0.78rem; color:rgba(255,255,255,0.45); margin-top:4px;">Created &amp; maintained by <strong style="color:rgba(255,255,255,0.65); font-weight:600;">Taofeek Habeebullah Richard</strong> &mdash; Founder, LearnLu</p>
+      <p style="color:rgba(255,255,255,0.4); font-size:0.78rem;">Educational content only. Not affiliated with any hardware or software company.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/theme-switcher.js"></script>
+<script src="assets/js/cookie-consent.js"></script>
+</body>
+</html>

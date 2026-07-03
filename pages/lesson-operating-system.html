@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="forest">
+<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="What is an operating system? Learn how Windows, macOS and Android work, why every computer needs one, with beginner-friendly analogies and examples."/>
+<title>What is an Operating System? — LearnLu</title>
+  <!-- Google Analytics GA4 — Replace G-XXXXXXXXXX with your real Measurement ID -->
+  <!-- Get your ID at: analytics.google.com -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <link rel="sitemap" type="application/xml" href="../sitemap.xml"/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content="@LearnLu"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://learnlu.com/pages/lesson-operating-system.html"/>
+  <meta property="og:site_name" content="LearnLu"/>
+  <meta property="og:description" content="What is an operating system? Learn how Windows, macOS and Android work, why every computer needs one, with beginner-friendly analogies and examples."/>
+  <meta property="og:title" content="What is an Operating System? — LearnLu"/>
+  <link rel="canonical" href="https://learnlu.com/pages/lesson-operating-system.html"/>
+<link rel="stylesheet" href="../assets/css/style.css"/>
+  <link rel="stylesheet" href="../assets/css/images.css"/>
+</head>
+<body>
+<nav id="navbar">
+  <!-- Row 1: Logo + CTA -->
+  <div class="nav-row-top">
+    <a href="../index.html" class="nav-logo">
+      <div class="logo-mark">💻</div>
+      Learn<span class="accent">Lu</span>
+    </a>
+    <div class="nav-right">
+      <a href="lessons.html" class="btn btn-primary btn-sm">All Lessons →</a>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+  <!-- Row 2: Page links -->
+  <ul class="nav-links nav-row-bottom">
+    <li><a href="../index.html">🏠 Home</a></li>
+    <li><a href="lesson-hardware.html">🖥️ Hardware</a></li>
+    <li><a href="lesson-internet.html">🌐 Internet</a></li>
+    <li><a href="faq.html">❓ FAQ</a></li>
+    <li><a href="about.html">ℹ️ About</a></li>
+  </ul>
+</nav>
+<div class="mobile-menu" id="mobileMenu"><a href="../index.html">Home</a><a href="lessons.html">All Lessons</a></div>
+<div class="reading-progress"><div class="reading-fill"></div></div>
+<section class="lesson-hero"><div class="container">
+  <div class="breadcrumb"><a href="../index.html">Home</a> › <a href="lessons.html">Lessons</a> › Operating Systems</div>
+  <div class="lesson-badges"><span class="badge badge badge-beginner">Beginner</span><span class="badge badge badge-blue">⏱ 10 min</span><span class="badge badge badge-teal">🧠 2 Quizzes</span></div>
+  <h1>What is an Operating System?</h1>
+  <p class="lesson-intro">Your computer cannot work without an operating system. But what does it actually do — and why does it matter which one you use? This lesson answers everything clearly.</p>
+</div></section>
+<div class="container lesson-layout">
+  <article class="article-content">
+      <!-- Image type badges -->
+      <div class="image-type-badges">
+        <span class="img-badge img-badge-photo">📸 Real Photos</span>
+        <span class="img-badge img-badge-svg">📊 Diagrams</span>
+        <span class="img-badge img-badge-icon">🎨 Visual Aids</span>
+      </div>
+
+      <!-- Hero Photo -->
+      <div class="lesson-hero-photo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="280" viewBox="0 0 400 220" style="display:block;" preserveAspectRatio="xMidYMid slice">
+  <rect width="400" height="220" fill="#E0F2FE"/>
+  <rect x="0" y="0" width="400" height="220" fill="#E0F2FE" opacity="0.6"/>
+  <!-- subtle grid pattern -->
+  <line x1="0" y1="55" x2="400" y2="55" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="110" x2="400" y2="110" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="165" x2="400" y2="165" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="100" y1="0" x2="100" y2="220" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="200" y1="0" x2="200" y2="220" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="300" y1="0" x2="300" y2="220" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <!-- icon circle -->
+  <circle cx="200" cy="100" r="52" fill="#075985" opacity="0.12"/>
+  <circle cx="200" cy="100" r="40" fill="#075985" opacity="0.1"/>
+  <text x="200" y="116" text-anchor="middle" font-size="52" dominant-baseline="middle">🪟</text>
+  <!-- label pill -->
+  <rect x="130" y="155" width="140" height="28" rx="14" fill="#075985" opacity="0.15"/>
+  <text x="200" y="174" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#075985">Windows OS</text>
+</svg>
+        <div class="photo-caption-overlay">
+          <strong>Windows 11 — the most common operating system</strong>
+The OS is the layer between you and the hardware — it manages everything you see and use
+        </div>
+      </div>
+      <p class="unsplash-credit">Photo: Unsplash · Free to use commercially</p>
+
+    <div class="ad-zone">📢 Advertisement</div>
+
+    <h2 id="what-is-os">What is an Operating System?</h2>
+    <p>An <strong>operating system (OS)</strong> is the master software that manages everything on your computer — handling hardware, running apps, and providing the interface you see and click on. Without it, your computer is just expensive, silent metal.</p>
+    <div class="example-box analogy"><p>Think of the OS as the <strong>manager of a large office building</strong>. The building (hardware) has rooms, electricity, and equipment. The employees (apps) do the actual work. The OS manager allocates rooms, handles electricity, and makes sure no two employees crash into each other. Without the manager, the building is chaos.</p></div>
+    <div class="checklist">
+      <div class="check-item"><div class="check-icon">✓</div><span class="check-text"><strong>Memory management</strong> — deciding which app gets how much RAM at any moment</span></div>
+      <div class="check-item"><div class="check-icon">✓</div><span class="check-text"><strong>File management</strong> — keeping track of every file on your storage drive</span></div>
+      <div class="check-item"><div class="check-icon">✓</div><span class="check-text"><strong>Device management</strong> — making your printer, keyboard, and mouse work with apps</span></div>
+      <div class="check-item"><div class="check-icon">✓</div><span class="check-text"><strong>Security</strong> — controlling who can access what on the system</span></div>
+    </div>
+    <h2 id="common-os">Common Operating Systems</h2>
+    <table class="compare-table">
+      <thead><tr><th>OS</th><th>Made By</th><th>Runs On</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Windows 11</strong></td><td>Microsoft</td><td>Most PCs and laptops (~72%)</td></tr>
+        <tr><td><strong>macOS</strong></td><td>Apple</td><td>MacBook, iMac only</td></tr>
+        <tr><td><strong>Android</strong></td><td>Google</td><td>Most smartphones (Samsung, Tecno, etc.)</td></tr>
+        <tr><td><strong>iOS</strong></td><td>Apple</td><td>iPhone and iPad only</td></tr>
+        <tr><td><strong>Linux</strong></td><td>Community</td><td>Servers, developer machines</td></tr>
+      </tbody>
+    </table>
+    <h2 id="windows">Windows — The World's Most Used Desktop OS</h2>
+    <p><strong>Windows</strong>, made by Microsoft, runs on the vast majority of desktop and laptop computers worldwide. If you bought a laptop from a shop, it almost certainly came with Windows. The current version is <strong>Windows 11</strong>.</p>
+    <div class="example-box real"><p>The Windows <strong>Start Menu</strong> (bottom-left) opens your apps. The <strong>Taskbar</strong> (bottom bar) shows running programs. <strong>File Explorer</strong> is where you browse your files. Right-clicking the desktop gives you options to personalise it. Most business, banking, and government software is designed for Windows first.</p></div>
+    <h2 id="macos">macOS — Apple's Desktop OS</h2>
+    <p><strong>macOS</strong> runs exclusively on Apple computers. It is famous for its clean design and is popular with creative professionals — designers, video editors, and musicians. If you own a MacBook or iMac, you are using macOS.</p>
+    <div class="example-box analogy"><p>Windows vs macOS is like Android vs iPhone. They do the same things but feel different. Windows offers more flexibility. macOS offers a more polished, consistent experience — but only on Apple hardware.</p></div>
+    <h2 id="mobile">Android &amp; iOS — Mobile Operating Systems</h2>
+    <p>Your smartphone runs an OS too. <strong>Android</strong> (Google) powers Samsung, Tecno, Infinix, and most other phones. <strong>iOS</strong> (Apple) runs exclusively on iPhones.</p>
+    <div class="example-box real"><p>When you download an app from the Google Play Store, you get an Android app. When your iPhone-owning friend buys from the Apple App Store, they get an iOS app. Same app name, different programs built for different operating systems.</p></div>
+    <div class="quiz-box">
+      <h4>A new laptop starts up showing a Start Menu at the bottom. Which OS is it running?</h4>
+      <button class="quiz-option" data-correct="false">macOS</button>
+      <button class="quiz-option" data-correct="true">Windows</button>
+      <button class="quiz-option" data-correct="false">Android</button>
+      <button class="quiz-option" data-correct="false">Linux</button>
+      <div class="quiz-feedback"></div>
+    </div>
+    <h2 id="updates">Why You Must Keep Your OS Updated</h2>
+    <p>OS updates fix security holes that hackers exploit. In 2017, the WannaCry virus infected 200,000 computers in 150 countries — exploiting a Windows weakness that Microsoft had already patched two months earlier. Only people who had not updated were vulnerable.</p>
+    <div class="example-box tip"><p><strong>How to update:</strong> Windows → Start Menu → Settings → Windows Update. macOS → Apple menu → System Settings → General → Software Update. Set to automatic so you never miss a critical security patch.</p></div>
+    <div class="quiz-box">
+      <h4>What is the primary job of an operating system?</h4>
+      <button class="quiz-option" data-correct="false">To browse the internet</button>
+      <button class="quiz-option" data-correct="true">To manage hardware and software so they work together</button>
+      <button class="quiz-option" data-correct="false">To store photos and documents</button>
+      <button class="quiz-option" data-correct="false">To protect against all viruses automatically</button>
+      <div class="quiz-feedback"></div>
+    </div>
+    <div class="key-takeaways"><h3>📌 Key Takeaways</h3>
+      <div class="checklist">
+        <div class="check-item"><div class="check-icon">✓</div><span class="check-text">OS = master software managing all hardware and apps</span></div>
+        <div class="check-item"><div class="check-icon">✓</div><span class="check-text">Windows = most common desktop OS (72% of PCs)</span></div>
+        <div class="check-item"><div class="check-icon">✓</div><span class="check-text">macOS = Apple computers only</span></div>
+        <div class="check-item"><div class="check-icon">✓</div><span class="check-text">Android &amp; iOS = mobile operating systems</span></div>
+        <div class="check-item"><div class="check-icon">✓</div><span class="check-text">Always keep your OS updated — security patches save computers</span></div>
+      </div>
+    </div>
+    <div class="lesson-nav"><a href="lesson-hardware.html" class="btn-nav prev">← Computer Hardware</a><a href="lesson-software.html" class="btn-nav next">Next: What Is Software? →</a></div>
+  </article>
+  <aside class="article-sidebar">
+    <div class="sidebar-toc"><h5>📋 In This Lesson</h5><a href="#what-is-os">What Is an OS?</a><a href="#common-os">Common Systems</a><a href="#windows">Windows</a><a href="#macos">macOS</a><a href="#mobile">Android & iOS</a><a href="#updates">Keep It Updated</a></div>
+      <div class="sidebar-related-photos">
+        <h5>📸 Related Lessons</h5>
+        <a href="lesson-hardware.html" class="related-photo-item">
+          <div class="related-photo-thumb"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 400 220" style="display:block;border-radius:8px;min-width:44px;" preserveAspectRatio="xMidYMid slice">
+  <rect width="400" height="220" fill="#DCFCE7"/>
+  <rect x="0" y="0" width="400" height="220" fill="#DCFCE7" opacity="0.6"/>
+  <!-- subtle grid pattern -->
+  <line x1="0" y1="55" x2="400" y2="55" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="110" x2="400" y2="110" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="165" x2="400" y2="165" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="100" y1="0" x2="100" y2="220" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="200" y1="0" x2="200" y2="220" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="300" y1="0" x2="300" y2="220" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <!-- icon circle -->
+  <circle cx="200" cy="100" r="52" fill="#14532D" opacity="0.12"/>
+  <circle cx="200" cy="100" r="40" fill="#14532D" opacity="0.1"/>
+  <text x="200" y="116" text-anchor="middle" font-size="52" dominant-baseline="middle">🖥️</text>
+  <!-- label pill -->
+  <rect x="130" y="155" width="140" height="28" rx="14" fill="#14532D" opacity="0.15"/>
+  <text x="200" y="174" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#14532D">Computer Hardware</text>
+</svg></div>
+          <div class="related-photo-info"><div class="rp-title">Computer Hardware</div><div class="rp-meta">Lesson 1 · 15 min</div></div>
+        </a>
+        <a href="lesson-internet.html" class="related-photo-item">
+          <div class="related-photo-thumb"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 400 220" style="display:block;border-radius:8px;min-width:44px;" preserveAspectRatio="xMidYMid slice">
+  <rect width="400" height="220" fill="#E0F2FE"/>
+  <rect x="0" y="0" width="400" height="220" fill="#E0F2FE" opacity="0.6"/>
+  <!-- subtle grid pattern -->
+  <line x1="0" y1="55" x2="400" y2="55" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="110" x2="400" y2="110" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="165" x2="400" y2="165" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="100" y1="0" x2="100" y2="220" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="200" y1="0" x2="200" y2="220" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="300" y1="0" x2="300" y2="220" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <!-- icon circle -->
+  <circle cx="200" cy="100" r="52" fill="#075985" opacity="0.12"/>
+  <circle cx="200" cy="100" r="40" fill="#075985" opacity="0.1"/>
+  <text x="200" y="116" text-anchor="middle" font-size="52" dominant-baseline="middle">🌐</text>
+  <!-- label pill -->
+  <rect x="130" y="155" width="140" height="28" rx="14" fill="#075985" opacity="0.15"/>
+  <text x="200" y="174" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#075985">Internet & Networks</text>
+</svg></div>
+          <div class="related-photo-info"><div class="rp-title">How the Internet Works</div><div class="rp-meta">Lesson 10 · 12 min</div></div>
+        </a>
+        <a href="lesson-passwords.html" class="related-photo-item">
+          <div class="related-photo-thumb"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 400 220" style="display:block;border-radius:8px;min-width:44px;" preserveAspectRatio="xMidYMid slice">
+  <rect width="400" height="220" fill="#DCFCE7"/>
+  <rect x="0" y="0" width="400" height="220" fill="#DCFCE7" opacity="0.6"/>
+  <!-- subtle grid pattern -->
+  <line x1="0" y1="55" x2="400" y2="55" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="110" x2="400" y2="110" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="165" x2="400" y2="165" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="100" y1="0" x2="100" y2="220" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="200" y1="0" x2="200" y2="220" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="300" y1="0" x2="300" y2="220" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <!-- icon circle -->
+  <circle cx="200" cy="100" r="52" fill="#14532D" opacity="0.12"/>
+  <circle cx="200" cy="100" r="40" fill="#14532D" opacity="0.1"/>
+  <text x="200" y="116" text-anchor="middle" font-size="52" dominant-baseline="middle">🔐</text>
+  <!-- label pill -->
+  <rect x="130" y="155" width="140" height="28" rx="14" fill="#14532D" opacity="0.15"/>
+  <text x="200" y="174" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#14532D">Password Security</text>
+</svg></div>
+          <div class="related-photo-info"><div class="rp-title">Strong Passwords</div><div class="rp-meta">Lesson 16 · 8 min</div></div>
+        </a>
+        <a href="lesson-files-folders.html" class="related-photo-item">
+          <div class="related-photo-thumb"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 400 220" style="display:block;border-radius:8px;min-width:44px;" preserveAspectRatio="xMidYMid slice">
+  <rect width="400" height="220" fill="#FFF7ED"/>
+  <rect x="0" y="0" width="400" height="220" fill="#FFF7ED" opacity="0.6"/>
+  <!-- subtle grid pattern -->
+  <line x1="0" y1="55" x2="400" y2="55" stroke="#92400E" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="110" x2="400" y2="110" stroke="#92400E" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="165" x2="400" y2="165" stroke="#92400E" stroke-width="0.4" opacity="0.15"/>
+  <line x1="100" y1="0" x2="100" y2="220" stroke="#92400E" stroke-width="0.4" opacity="0.15"/>
+  <line x1="200" y1="0" x2="200" y2="220" stroke="#92400E" stroke-width="0.4" opacity="0.15"/>
+  <line x1="300" y1="0" x2="300" y2="220" stroke="#92400E" stroke-width="0.4" opacity="0.15"/>
+  <!-- icon circle -->
+  <circle cx="200" cy="100" r="52" fill="#92400E" opacity="0.12"/>
+  <circle cx="200" cy="100" r="40" fill="#92400E" opacity="0.1"/>
+  <text x="200" y="116" text-anchor="middle" font-size="52" dominant-baseline="middle">📂</text>
+  <!-- label pill -->
+  <rect x="130" y="155" width="140" height="28" rx="14" fill="#92400E" opacity="0.15"/>
+  <text x="200" y="174" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#92400E">Files & Folders</text>
+</svg></div>
+          <div class="related-photo-info"><div class="rp-title">Files &amp; Folders</div><div class="rp-meta">Lesson 7 · 9 min</div></div>
+        </a>
+      </div>
+    <div class="ad-zone tall">📢 Ad</div>
+  </aside>
+</div>
+<footer class="site-footer"><div class="container footer-bottom-bar"><p>© 2026 LearnLu · <a href="../index.html">Home</a> · <a href="privacy.html">Privacy</a></p>
+      <p style="font-size:0.78rem; color:rgba(255,255,255,0.45); margin-top:4px;">Created &amp; maintained by <strong style="color:rgba(255,255,255,0.65); font-weight:600;">Taofeek Habeebullah Richard</strong> &mdash; Founder, LearnLu</p></div>  <div class="container" style="padding:12px 24px 16px;border-top:1px solid rgba(255,255,255,0.08);">
+      <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:10px;">
+        <a href="privacy.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;">Privacy Policy</a>
+        <a href="terms.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;">Terms of Service</a>
+        <a href="disclaimer.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;">Disclaimer</a>
+        <a href="contact.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;">Contact</a>
+        <a href="about.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;">About</a>
+      </div>
+  </div>
+</footer>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/theme-switcher.js"></script>
+<script src="../assets/js/cookie-consent.js"></script>
+</body>
+</html>

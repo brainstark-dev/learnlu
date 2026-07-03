@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="forest">
+<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Learn how to use spreadsheets with Microsoft Excel and Google Sheets. Cells, rows, columns, basic formulas, and SUM explained for complete beginners."/>
+<title>Spreadsheets for Beginners: Excel & Google Sheets — LearnLu</title>
+  <!-- Google Analytics GA4 — Replace G-XXXXXXXXXX with your real Measurement ID -->
+  <!-- Get your ID at: analytics.google.com -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <link rel="sitemap" type="application/xml" href="../sitemap.xml"/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content="@LearnLu"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://learnlu.com/pages/lesson-spreadsheets-basics.html"/>
+  <meta property="og:site_name" content="LearnLu"/>
+  <meta property="og:description" content="Learn how to use spreadsheets with Microsoft Excel and Google Sheets. Cells, rows, columns, basic formulas, and SUM explained for complete beginners."/>
+  <meta property="og:title" content="Spreadsheets for Beginners: Excel & Google Sheets — LearnLu"/>
+  <link rel="canonical" href="https://learnlu.com/pages/lesson-spreadsheets-basics.html"/>
+<link rel="stylesheet" href="../assets/css/style.css"/>
+  <link rel="stylesheet" href="../assets/css/images.css"/>
+</head>
+<body>
+<nav id="navbar">
+  <!-- Row 1: Logo + CTA -->
+  <div class="nav-row-top">
+    <a href="../index.html" class="nav-logo">
+      <div class="logo-mark">💻</div>
+      Learn<span class="accent">Lu</span>
+    </a>
+    <div class="nav-right">
+      <a href="lessons.html" class="btn btn-primary btn-sm">All Lessons →</a>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+  <!-- Row 2: Page links -->
+  <ul class="nav-links nav-row-bottom">
+    <li><a href="../index.html">🏠 Home</a></li>
+    <li><a href="lesson-hardware.html">🖥️ Hardware</a></li>
+    <li><a href="lesson-internet.html">🌐 Internet</a></li>
+    <li><a href="faq.html">❓ FAQ</a></li>
+    <li><a href="about.html">ℹ️ About</a></li>
+  </ul>
+</nav>
+<div class="mobile-menu" id="mobileMenu"><a href="../index.html">Home</a><a href="lessons.html">All Lessons</a></div>
+<div class="reading-progress"><div class="reading-fill"></div></div>
+<section class="lesson-hero"><div class="container">
+  <div class="breadcrumb"><a href="../index.html">Home</a> › <a href="lessons.html">Lessons</a> › Spreadsheets</div>
+  <div class="lesson-badges"><span class="badge badge-beginner">Beginner</span><span class="badge badge-blue">⏱ 10 min</span><span class="badge badge-teal">🧠 2 Quizzes</span></div>
+  <h1>Spreadsheets for Beginners: Excel & Google Sheets</h1>
+  <p class="lesson-intro">Spreadsheets are incredibly powerful tools for organising numbers, making budgets, and tracking anything. Excel and Google Sheets look intimidating at first — but the basics are simpler than they appear. This lesson starts from zero.</p>
+</div></section>
+<div class="container lesson-layout">
+  <article class="article-content">
+    <div class="ad-zone">📢 Advertisement</div>
+
+          <div class="image-type-badges">
+        <span class="img-badge img-badge-photo">📸 Real Photos</span>
+        <span class="img-badge img-badge-icon">🎨 Visual Aids</span>
+      </div>
+
+      <div class="lesson-hero-photo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="280" viewBox="0 0 400 220" style="display:block;" preserveAspectRatio="xMidYMid slice">
+  <rect width="400" height="220" fill="#DCFCE7"/>
+  <rect x="0" y="0" width="400" height="220" fill="#DCFCE7" opacity="0.6"/>
+  <!-- subtle grid pattern -->
+  <line x1="0" y1="55" x2="400" y2="55" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="110" x2="400" y2="110" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="165" x2="400" y2="165" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="100" y1="0" x2="100" y2="220" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="200" y1="0" x2="200" y2="220" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="300" y1="0" x2="300" y2="220" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <!-- icon circle -->
+  <circle cx="200" cy="100" r="52" fill="#14532D" opacity="0.12"/>
+  <circle cx="200" cy="100" r="40" fill="#14532D" opacity="0.1"/>
+  <text x="200" y="116" text-anchor="middle" font-size="52" dominant-baseline="middle">📊</text>
+  <!-- label pill -->
+  <rect x="130" y="155" width="140" height="28" rx="14" fill="#14532D" opacity="0.15"/>
+  <text x="200" y="174" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#14532D">Spreadsheets</text>
+</svg>
+        <div class="photo-caption-overlay"><strong>Spreadsheet basics — working with tables and numbers</strong>
+Spreadsheets look complicated but follow simple logic — this introduction makes them approachable</div>
+      </div>
+      <p class="unsplash-credit">Photo: Unsplash · Free to use commercially</p>
+
+<h2 id="what-is-spreadsheet">What is a Spreadsheet?</h2>
+    <p>A <strong>spreadsheet</strong> is a program that organises data into a grid of rows and columns. You can type numbers, do automatic calculations, create charts, and track anything — budgets, inventory, grades, schedules. The two most popular tools are <strong>Microsoft Excel</strong> (paid) and <strong>Google Sheets</strong> (free).</p>
+    <div class="example-box analogy"><p>A spreadsheet is like a <strong>super-powered calculator combined with a table</strong>. Imagine writing a budget on paper — you'd write numbers in rows and columns and manually add them up. A spreadsheet does all the adding (and any other maths) automatically, instantly recalculating every time you change a number.</p></div>
+    <h2 id="anatomy">Parts of a Spreadsheet</h2>
+    <div class="step-list">
+      <div class="step-item"><div class="step-num">1</div><div class="step-body"><h4>Cells</h4><p>The individual boxes in the grid. Each cell has a unique address — like <strong>B3</strong> (column B, row 3). Click a cell to select it. Type to enter data. Press Enter to move down, Tab to move right.</p></div></div>
+      <div class="step-item"><div class="step-num">2</div><div class="step-body"><h4>Rows (numbered)</h4><p>Horizontal lines of cells, numbered 1, 2, 3... downwards. Row 1 is typically used for column headers ("Name", "Amount", "Date").</p></div></div>
+      <div class="step-item"><div class="step-num">3</div><div class="step-body"><h4>Columns (lettered)</h4><p>Vertical lines of cells, labelled A, B, C... across. Each column holds one type of data (e.g. column A = names, column B = amounts).</p></div></div>
+      <div class="step-item"><div class="step-num">4</div><div class="step-body"><h4>Formula Bar</h4><p>The bar just above the grid. It shows the contents of the currently selected cell — either the raw value or the formula calculating it.</p></div></div>
+      <div class="step-item"><div class="step-num">5</div><div class="step-body"><h4>Sheets (tabs at bottom)</h4><p>A single spreadsheet file can contain multiple sheets — like pages in a notebook. Click the tabs at the bottom (Sheet1, Sheet2) to switch between them.</p></div></div>
+    </div>
+    <h2 id="entering-data">Entering Data</h2>
+    <table class="compare-table">
+      <thead><tr><th>Data Type</th><th>How to Enter</th><th>Example</th></tr></thead>
+      <tbody>
+        <tr><td>Text (labels)</td><td>Just type</td><td>"Name", "January", "Total"</td></tr>
+        <tr><td>Numbers</td><td>Type the number — no currency symbols</td><td>5000, 3.14, 25000</td></tr>
+        <tr><td>Dates</td><td>Type in DD/MM/YYYY format</td><td>01/06/2025</td></tr>
+        <tr><td>Formulas</td><td>Always start with = sign</td><td>=A1+B1, =SUM(A1:A10)</td></tr>
+      </tbody>
+    </table>
+    <h2 id="formulas">Basic Formulas — The Real Power</h2>
+    <p>A <strong>formula</strong> is an instruction that tells the spreadsheet to calculate something. All formulas start with the <strong>=</strong> sign.</p>
+    <div class="code-block">
+      =A1+B1        <span class="comment"># Add the values in cells A1 and B1</span>
+      =A1-B1        <span class="comment"># Subtract B1 from A1</span>
+      =A1*B1        <span class="comment"># Multiply A1 by B1</span>
+      =A1/B1        <span class="comment"># Divide A1 by B1</span>
+      =SUM(A1:A10)  <span class="comment"># Add all values from A1 to A10</span>
+      =AVERAGE(B1:B12) <span class="comment"># Calculate the average of B1 through B12</span>
+      =MAX(C1:C20)  <span class="comment"># Find the highest value in C1 to C20</span>
+      =MIN(C1:C20)  <span class="comment"># Find the lowest value in C1 to C20</span>
+    </div>
+    <div class="example-box real"><p><strong>Monthly budget example:</strong> Put your income in cell B2. Put each expense in B3, B4, B5 etc. In cell B10, type <strong>=SUM(B3:B9)</strong> to total your expenses automatically. In B11, type <strong>=B2-B10</strong> to show what's left. Now if you change any expense, everything recalculates instantly. This is the power of spreadsheets.</p></div>
+    <h2 id="formatting">Formatting Cells</h2>
+    <div class="checklist">
+      <div class="check-item"><div class="check-icon">✓</div><span class="check-text"><strong>Currency format:</strong> Select cells with money values → Home → $ button. Numbers display as ₦5,000.00 or $5,000.00 automatically</span></div>
+      <div class="check-item"><div class="check-icon">✓</div><span class="check-text"><strong>Bold headers:</strong> Select Row 1 → Ctrl+B. Makes column headers stand out clearly</span></div>
+      <div class="check-item"><div class="check-icon">✓</div><span class="check-text"><strong>Freeze top row:</strong> View → Freeze → 1 row. The header row stays visible as you scroll down through hundreds of rows</span></div>
+      <div class="check-item"><div class="check-icon">✓</div><span class="check-text"><strong>Auto-fit column width:</strong> Double-click the border between column headers — it auto-sizes to fit the content</span></div>
+    </div>
+    <div class="quiz-box">
+      <h4>You want to add all values from cell A1 to A20. Which formula do you type?</h4>
+      <button class="quiz-option" data-correct="false">ADD(A1:A20)</button>
+      <button class="quiz-option" data-correct="true">=SUM(A1:A20)</button>
+      <button class="quiz-option" data-correct="false">=TOTAL(A1,A20)</button>
+      <button class="quiz-option" data-correct="false">=A1+A20</button>
+      <div class="quiz-feedback"></div>
+    </div>
+    <div class="quiz-box">
+      <h4>What must every formula in a spreadsheet begin with?</h4>
+      <button class="quiz-option" data-correct="false">A capital letter</button>
+      <button class="quiz-option" data-correct="false">The word "formula"</button>
+      <button class="quiz-option" data-correct="true">The = (equals) sign</button>
+      <button class="quiz-option" data-correct="false">A cell reference like A1</button>
+      <div class="quiz-feedback"></div>
+    </div>
+    <div class="key-takeaways"><h3>📌 Key Takeaways</h3>
+      <div class="checklist">
+        <div class="check-item"><div class="check-icon">✓</div><span class="check-text">Spreadsheet = grid of cells for organising numbers and doing calculations</span></div>
+        <div class="check-item"><div class="check-icon">✓</div><span class="check-text">Each cell has an address: column letter + row number (e.g. B3)</span></div>
+        <div class="check-item"><div class="check-icon">✓</div><span class="check-text">All formulas start with = (e.g. =SUM(A1:A10))</span></div>
+        <div class="check-item"><div class="check-icon">✓</div><span class="check-text">Google Sheets is free and works in any browser — perfect for beginners</span></div>
+      </div>
+    </div>
+    <div class="lesson-nav"><a href="lesson-word-processing.html" class="btn-nav prev">← Word Processing</a><a href="lesson-printing.html" class="btn-nav next">Next: Printing →</a></div>
+  </article>
+  <aside class="article-sidebar">
+    <div class="sidebar-toc"><h5>📋 In This Lesson</h5><a href="#what-is-spreadsheet">What Is a Spreadsheet?</a><a href="#anatomy">Parts of a Spreadsheet</a><a href="#entering-data">Entering Data</a><a href="#formulas">Basic Formulas</a><a href="#formatting">Formatting Cells</a></div>
+      <div class="sidebar-related-photos">
+        <h5>📸 Related Lessons</h5>
+        <a href="lesson-hardware.html" class="related-photo-item">
+          <div class="related-photo-thumb"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 400 220" style="display:block;border-radius:8px;min-width:44px;" preserveAspectRatio="xMidYMid slice">
+  <rect width="400" height="220" fill="#DCFCE7"/>
+  <rect x="0" y="0" width="400" height="220" fill="#DCFCE7" opacity="0.6"/>
+  <!-- subtle grid pattern -->
+  <line x1="0" y1="55" x2="400" y2="55" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="110" x2="400" y2="110" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="165" x2="400" y2="165" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="100" y1="0" x2="100" y2="220" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="200" y1="0" x2="200" y2="220" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="300" y1="0" x2="300" y2="220" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <!-- icon circle -->
+  <circle cx="200" cy="100" r="52" fill="#14532D" opacity="0.12"/>
+  <circle cx="200" cy="100" r="40" fill="#14532D" opacity="0.1"/>
+  <text x="200" y="116" text-anchor="middle" font-size="52" dominant-baseline="middle">🖥️</text>
+  <!-- label pill -->
+  <rect x="130" y="155" width="140" height="28" rx="14" fill="#14532D" opacity="0.15"/>
+  <text x="200" y="174" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#14532D">Computer Hardware</text>
+</svg></div>
+          <div class="related-photo-info"><div class="rp-title">Computer Hardware</div><div class="rp-meta">Lesson 1 · 15 min</div></div>
+        </a>
+        <a href="lesson-internet.html" class="related-photo-item">
+          <div class="related-photo-thumb"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 400 220" style="display:block;border-radius:8px;min-width:44px;" preserveAspectRatio="xMidYMid slice">
+  <rect width="400" height="220" fill="#E0F2FE"/>
+  <rect x="0" y="0" width="400" height="220" fill="#E0F2FE" opacity="0.6"/>
+  <!-- subtle grid pattern -->
+  <line x1="0" y1="55" x2="400" y2="55" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="110" x2="400" y2="110" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="165" x2="400" y2="165" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="100" y1="0" x2="100" y2="220" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="200" y1="0" x2="200" y2="220" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="300" y1="0" x2="300" y2="220" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <!-- icon circle -->
+  <circle cx="200" cy="100" r="52" fill="#075985" opacity="0.12"/>
+  <circle cx="200" cy="100" r="40" fill="#075985" opacity="0.1"/>
+  <text x="200" y="116" text-anchor="middle" font-size="52" dominant-baseline="middle">🌐</text>
+  <!-- label pill -->
+  <rect x="130" y="155" width="140" height="28" rx="14" fill="#075985" opacity="0.15"/>
+  <text x="200" y="174" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#075985">Internet & Networks</text>
+</svg></div>
+          <div class="related-photo-info"><div class="rp-title">How the Internet Works</div><div class="rp-meta">Lesson 10 · 12 min</div></div>
+        </a>
+        <a href="lesson-passwords.html" class="related-photo-item">
+          <div class="related-photo-thumb"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 400 220" style="display:block;border-radius:8px;min-width:44px;" preserveAspectRatio="xMidYMid slice">
+  <rect width="400" height="220" fill="#DCFCE7"/>
+  <rect x="0" y="0" width="400" height="220" fill="#DCFCE7" opacity="0.6"/>
+  <!-- subtle grid pattern -->
+  <line x1="0" y1="55" x2="400" y2="55" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="110" x2="400" y2="110" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="165" x2="400" y2="165" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="100" y1="0" x2="100" y2="220" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="200" y1="0" x2="200" y2="220" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="300" y1="0" x2="300" y2="220" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <!-- icon circle -->
+  <circle cx="200" cy="100" r="52" fill="#14532D" opacity="0.12"/>
+  <circle cx="200" cy="100" r="40" fill="#14532D" opacity="0.1"/>
+  <text x="200" y="116" text-anchor="middle" font-size="52" dominant-baseline="middle">🔐</text>
+  <!-- label pill -->
+  <rect x="130" y="155" width="140" height="28" rx="14" fill="#14532D" opacity="0.15"/>
+  <text x="200" y="174" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#14532D">Password Security</text>
+</svg></div>
+          <div class="related-photo-info"><div class="rp-title">Strong Passwords</div><div class="rp-meta">Lesson 16 · 8 min</div></div>
+        </a>
+        <a href="lesson-files-folders.html" class="related-photo-item">
+          <div class="related-photo-thumb"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 400 220" style="display:block;border-radius:8px;min-width:44px;" preserveAspectRatio="xMidYMid slice">
+  <rect width="400" height="220" fill="#FFF7ED"/>
+  <rect x="0" y="0" width="400" height="220" fill="#FFF7ED" opacity="0.6"/>
+  <!-- subtle grid pattern -->
+  <line x1="0" y1="55" x2="400" y2="55" stroke="#92400E" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="110" x2="400" y2="110" stroke="#92400E" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="165" x2="400" y2="165" stroke="#92400E" stroke-width="0.4" opacity="0.15"/>
+  <line x1="100" y1="0" x2="100" y2="220" stroke="#92400E" stroke-width="0.4" opacity="0.15"/>
+  <line x1="200" y1="0" x2="200" y2="220" stroke="#92400E" stroke-width="0.4" opacity="0.15"/>
+  <line x1="300" y1="0" x2="300" y2="220" stroke="#92400E" stroke-width="0.4" opacity="0.15"/>
+  <!-- icon circle -->
+  <circle cx="200" cy="100" r="52" fill="#92400E" opacity="0.12"/>
+  <circle cx="200" cy="100" r="40" fill="#92400E" opacity="0.1"/>
+  <text x="200" y="116" text-anchor="middle" font-size="52" dominant-baseline="middle">📂</text>
+  <!-- label pill -->
+  <rect x="130" y="155" width="140" height="28" rx="14" fill="#92400E" opacity="0.15"/>
+  <text x="200" y="174" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#92400E">Files & Folders</text>
+</svg></div>
+          <div class="related-photo-info"><div class="rp-title">Files &amp; Folders</div><div class="rp-meta">Lesson 7 · 9 min</div></div>
+        </a>
+      </div>
+    <div class="ad-zone tall">📢 Ad</div>
+  </aside>
+</div>
+<footer class="site-footer"><div class="container footer-bottom-bar"><p>© 2026 LearnLu · <a href="../index.html">Home</a> · <a href="privacy.html">Privacy</a></p>
+      <p style="font-size:0.78rem; color:rgba(255,255,255,0.45); margin-top:4px;">Created &amp; maintained by <strong style="color:rgba(255,255,255,0.65); font-weight:600;">Taofeek Habeebullah Richard</strong> &mdash; Founder, LearnLu</p></div>  <div class="container" style="padding:12px 24px 16px;border-top:1px solid rgba(255,255,255,0.08);">
+      <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:10px;">
+        <a href="privacy.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;">Privacy Policy</a>
+        <a href="terms.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;">Terms of Service</a>
+        <a href="disclaimer.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;">Disclaimer</a>
+        <a href="contact.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;">Contact</a>
+        <a href="about.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;">About</a>
+      </div>
+  </div>
+</footer>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/theme-switcher.js"></script>
+<script src="../assets/js/cookie-consent.js"></script>
+</body>
+</html>

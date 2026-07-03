@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="forest">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Learn what computer hardware is with simple explanations and real-world examples. CPU, RAM, hard drive, keyboard, mouse — all explained for beginners."/>
+  <title>Computer Hardware Explained for Beginners — LearnLu</title>
+  <!-- Google Analytics GA4 — Replace G-XXXXXXXXXX with your real Measurement ID -->
+  <!-- Get your ID at: analytics.google.com -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <link rel="sitemap" type="application/xml" href="../sitemap.xml"/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content="@LearnLu"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://learnlu.com/pages/lesson-hardware.html"/>
+  <meta property="og:site_name" content="LearnLu"/>
+  <meta property="og:description" content="Learn what computer hardware is with simple explanations and real-world examples. CPU, RAM, hard drive, keyboard, mouse — all explained for beginners."/>
+  <meta property="og:title" content="Computer Hardware Explained for Beginners — LearnLu"/>
+  <link rel="canonical" href="https://learnlu.com/pages/lesson-hardware.html"/>
+  <link rel="stylesheet" href="../assets/css/style.css"/>
+  <link rel="stylesheet" href="../assets/css/images.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+</head>
+<body>
+
+<div class="reading-progress"><div class="reading-fill"></div></div>
+
+<nav id="navbar">
+  <!-- Row 1: Logo + CTA -->
+  <div class="nav-row-top">
+    <a href="../index.html" class="nav-logo">
+      <div class="logo-mark">💻</div>
+      Learn<span class="accent">Lu</span>
+    </a>
+    <div class="nav-right">
+      <a href="lessons.html" class="btn btn-primary btn-sm">All Lessons →</a>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+  <!-- Row 2: Page links -->
+  <ul class="nav-links nav-row-bottom">
+    <li><a href="../index.html">🏠 Home</a></li>
+    <li><a href="lesson-hardware.html" class="active">🖥️ Hardware</a></li>
+    <li><a href="lesson-internet.html">🌐 Internet</a></li>
+    <li><a href="faq.html">❓ FAQ</a></li>
+    <li><a href="about.html">ℹ️ About</a></li>
+  </ul>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="../index.html">Home</a>
+  <a href="lessons.html">All Lessons</a>
+  <a href="lesson-hardware.html">Hardware</a>
+  <a href="lesson-internet.html">Internet</a>
+  <a href="faq.html">FAQ</a>
+</div>
+
+<!-- Page Header -->
+<section style="padding:calc(var(--nav-h) + 48px) 0 40px; background:linear-gradient(135deg, var(--blue-lt) 0%, var(--off-white) 100%);">
+  <div class="container" style="max-width:900px;">
+    <div style="display:flex; align-items:center; gap:8px; font-size:0.82rem; color:var(--text-3); margin-bottom:16px;">
+      <a href="../index.html" style="color:var(--text-3);">Home</a> › <a href="lessons.html" style="color:var(--text-3);">Lessons</a> › <span style="color:var(--blue);">Hardware</span>
+    </div>
+    <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:18px;">
+      <span class="badge badge-beginner">Beginner</span>
+      <span class="badge badge-blue">⏱ 15 min read</span>
+      <span class="badge badge-teal">🧠 3 Mini Quizzes</span>
+    </div>
+    <h1 style="font-size:clamp(1.8rem,4vw,3rem); margin-bottom:14px;">Computer Hardware Explained for Beginners</h1>
+    <p style="font-size:1.1rem; color:var(--text-2); max-width:640px;">Everything inside and outside your computer — explained with simple everyday examples. By the end of this lesson, you will know exactly what every major part does and why it matters.</p>
+  </div>
+</section>
+
+<!-- Ad Zone -->
+<div class="container" style="max-width:900px;">
+  <div class="ad-zone">📢 Advertisement — Google AdSense (728×90)</div>
+</div>
+
+<!-- Main Content -->
+<div class="container" style="max-width:900px; padding-bottom:100px;">
+  <div class="article-layout">
+
+    <!-- Article Body -->
+    <article class="article-content">
+
+      <!-- Image type badges -->
+      <div class="image-type-badges">
+        <span class="img-badge img-badge-photo">📸 Real Photos</span>
+        <span class="img-badge img-badge-svg">📊 SVG Diagrams</span>
+        <span class="img-badge img-badge-icon">🎨 Icon Visuals</span>
+      </div>
+
+      <!-- Hero Photo -->
+      <div class="lesson-hero-photo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="280" viewBox="0 0 400 220" style="display:block;" preserveAspectRatio="xMidYMid slice">
+  <rect width="400" height="220" fill="#DCFCE7"/>
+  <rect x="0" y="0" width="400" height="220" fill="#DCFCE7" opacity="0.6"/>
+  <!-- subtle grid pattern -->
+  <line x1="0" y1="55" x2="400" y2="55" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="110" x2="400" y2="110" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="165" x2="400" y2="165" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="100" y1="0" x2="100" y2="220" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="200" y1="0" x2="200" y2="220" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="300" y1="0" x2="300" y2="220" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <!-- icon circle -->
+  <circle cx="200" cy="100" r="52" fill="#14532D" opacity="0.12"/>
+  <circle cx="200" cy="100" r="40" fill="#14532D" opacity="0.1"/>
+  <text x="200" y="116" text-anchor="middle" font-size="52" dominant-baseline="middle">🖥️</text>
+  <!-- label pill -->
+  <rect x="130" y="155" width="140" height="28" rx="14" fill="#14532D" opacity="0.15"/>
+  <text x="200" y="174" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#14532D">Computer Hardware</text>
+</svg>
+        <div class="photo-caption-overlay">
+          <strong>Computer hardware components</strong>
+          CPU, RAM sticks, motherboard and storage — the physical parts that make a computer work
+        </div>
+      </div>
+      <p class="unsplash-credit">Photo: Unsplash · Free to use commercially</p>
+
+      <!-- What is Hardware -->
+      <h2 id="what-is-hardware">What is Computer Hardware?</h2>
+      <p>Hardware refers to the <strong>physical parts</strong> of a computer — the things you can actually see and touch. The screen you are reading this on, the keyboard you type with, the chips inside the machine — all of that is hardware.</p>
+
+      <div class="example-box analogy">
+        <p>Think of a computer like a human body. The <strong>hardware</strong> is your body — your brain, hands, eyes, and mouth. The <strong>software</strong> (apps and programs) is like your thoughts, skills, and knowledge. The body is useless without the mind, and the mind needs a body to act — they work together.</p>
+      </div>
+
+      <!-- Icon Visual: 6 key parts -->
+      <div class="hardware-visual-grid">
+        <div class="hw-card"><span class="hw-icon">🧠</span><div class="hw-name">CPU</div><div class="hw-desc">The brain — processes every instruction</div></div>
+        <div class="hw-card"><span class="hw-icon">⚡</span><div class="hw-name">RAM</div><div class="hw-desc">Working memory — holds current tasks</div></div>
+        <div class="hw-card"><span class="hw-icon">💾</span><div class="hw-name">Storage</div><div class="hw-desc">Files saved permanently here</div></div>
+        <div class="hw-card"><span class="hw-icon">🖥️</span><div class="hw-name">Monitor</div><div class="hw-desc">Output — shows you everything</div></div>
+        <div class="hw-card"><span class="hw-icon">⌨️</span><div class="hw-name">Keyboard</div><div class="hw-desc">Input — type commands and text</div></div>
+        <div class="hw-card"><span class="hw-icon">🖱️</span><div class="hw-name">Mouse</div><div class="hw-desc">Input — point and click</div></div>
+      </div>
+
+      <p>Hardware can be split into two groups:</p>
+      <ul>
+        <li><strong>Internal hardware</strong> — parts inside the computer case (CPU, RAM, hard drive, motherboard)</li>
+        <li><strong>External hardware (peripherals)</strong> — parts attached outside (keyboard, mouse, monitor, printer)</li>
+      </ul>
+
+      <!-- Input / Output -->
+      <h2 id="input-output">Input vs Output Devices</h2>
+      <p>Before we look at individual parts, it's important to understand <strong>input</strong> and <strong>output</strong>. These are the two fundamental directions that information flows in a computer.</p>
+
+      <table class="compare-table">
+        <thead><tr><th>Type</th><th>What it does</th><th>Examples</th></tr></thead>
+        <tbody>
+          <tr><td>📥 <strong>Input</strong></td><td>Sends information INTO the computer</td><td>Keyboard, mouse, microphone, camera, scanner</td></tr>
+          <tr><td>📤 <strong>Output</strong></td><td>Sends information OUT of the computer</td><td>Monitor, speakers, printer, projector</td></tr>
+          <tr><td>💾 <strong>Storage</strong></td><td>Saves information for later</td><td>Hard drive, USB stick, SD card</td></tr>
+        </tbody>
+      </table>
+
+      <div class="example-box real">
+        <p>When you speak into a microphone on a video call (input), the computer processes your voice and sends it out through your friend's speakers (output). Meanwhile, your hard drive (storage) might be saving a recording of the call for you to watch later.</p>
+      </div>
+
+      <div class="quiz-box">
+        <h4>Quick Check: Which of these is an OUTPUT device?</h4>
+        <button class="quiz-option" data-correct="false">Keyboard</button>
+        <button class="quiz-option" data-correct="false">Mouse</button>
+        <button class="quiz-option" data-correct="true">Speakers</button>
+        <button class="quiz-option" data-correct="false">Scanner</button>
+        <div class="quiz-feedback"></div>
+      </div>
+
+      <!-- CPU -->
+      <h2 id="cpu">The CPU — The Brain of the Computer</h2>
+      <p>The <strong>CPU (Central Processing Unit)</strong> is the most important chip inside your computer. It carries out every instruction from every program you run. When you open a document, play a video, or search Google, the CPU is the part doing the actual work.</p>
+
+      <!-- CPU Photo + Text -->
+      <div class="photo-text-split">
+        <div class="photo-col">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="280" viewBox="0 0 400 220" style="display:block;" preserveAspectRatio="xMidYMid slice">
+  <rect width="400" height="220" fill="#E0F2FE"/>
+  <rect x="0" y="0" width="400" height="220" fill="#E0F2FE" opacity="0.6"/>
+  <!-- subtle grid pattern -->
+  <line x1="0" y1="55" x2="400" y2="55" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="110" x2="400" y2="110" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="165" x2="400" y2="165" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="100" y1="0" x2="100" y2="220" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="200" y1="0" x2="200" y2="220" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="300" y1="0" x2="300" y2="220" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <!-- icon circle -->
+  <circle cx="200" cy="100" r="52" fill="#075985" opacity="0.12"/>
+  <circle cx="200" cy="100" r="40" fill="#075985" opacity="0.1"/>
+  <text x="200" y="116" text-anchor="middle" font-size="52" dominant-baseline="middle">🧠</text>
+  <!-- label pill -->
+  <rect x="130" y="155" width="140" height="28" rx="14" fill="#075985" opacity="0.15"/>
+  <text x="200" y="174" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#075985">CPU Processor</text>
+</svg>
+        </div>
+        <div class="text-col">
+          <strong>What a real CPU looks like</strong>
+          <p>This is an Intel Core processor — the square silver chip with hundreds of gold pins underneath. It sits inside a socket on the motherboard. Modern CPUs have 4–16 cores, each one like a separate brain working simultaneously.</p>
+        </div>
+      </div>
+      <p class="unsplash-credit">Photo: Unsplash · Free to use</p>
+
+      <div class="analogy-banner">
+        <p>"The CPU is like the chef in a restaurant kitchen. Customers send orders (your clicks and commands), the chef reads each order, prepares the food (processes the data), and sends it out. The faster the chef works, the faster you get your food — just like a faster CPU makes your computer run faster."</p>
+      </div>
+
+      <p>CPU speed is measured in <strong>GHz (Gigahertz)</strong>. A 3.0 GHz CPU can perform 3 billion operations per second. Modern CPUs also have multiple <strong>cores</strong> — think of each core as an individual chef. A quad-core CPU has 4 chefs working at the same time, allowing the computer to do 4 things simultaneously.</p>
+
+      <div class="example-box real">
+        <p><strong>Practical example:</strong> If your computer slows down when you have 10 browser tabs open, it often means your CPU (or RAM) is struggling to handle all those tasks at once. Upgrading to a faster, multi-core CPU would solve this — like hiring more chefs.</p>
+      </div>
+
+      <div class="example-box tip">
+        <p>For basic tasks (emails, documents, browsing): look for at least a <strong>dual-core 2.0 GHz</strong> processor. For heavy tasks (video editing, gaming): look for <strong>quad-core 3.5 GHz+</strong>. Popular brands: <strong>Intel Core</strong> (i3, i5, i7, i9) and <strong>AMD Ryzen</strong>.</p>
+      </div>
+
+      <!-- RAM -->
+      <h2 id="ram">RAM — The Computer's Working Space</h2>
+      <p><strong>RAM (Random Access Memory)</strong> is your computer's short-term, working memory. It temporarily stores information that the computer is <em>currently using</em> so the CPU can access it quickly. The more RAM you have, the more things you can do at the same time without slowing down.</p>
+
+      <!-- SVG Diagram: RAM vs Storage -->
+      <div class="diagram-container">
+        <div class="diagram-title">
+          <span class="diagram-badge">📊 SVG Diagram</span>
+          RAM vs Storage — the key difference
+        </div>
+        <svg width="100%" viewBox="0 0 640 180" xmlns="http://www.w3.org/2000/svg" style="display:block">
+          <defs><marker id="arrd" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#16A34A" stroke-width="1.5" stroke-linecap="round"/></marker></defs>
+          <rect x="20" y="15" width="270" height="130" rx="12" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+          <text x="155" y="42" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-size="14" font-weight="700" fill="#14532D">RAM (Working Memory)</text>
+          <text x="155" y="59" text-anchor="middle" font-size="11" fill="#166534">Your desk — holds what you're using NOW</text>
+          <rect x="40" y="70" width="68" height="32" rx="6" fill="#fff" stroke="#BBF7D0" stroke-width="1"/>
+          <text x="74" y="91" text-anchor="middle" font-size="10" fill="#14532D">Browser</text>
+          <rect x="118" y="70" width="68" height="32" rx="6" fill="#fff" stroke="#BBF7D0" stroke-width="1"/>
+          <text x="152" y="91" text-anchor="middle" font-size="10" fill="#14532D">Word</text>
+          <rect x="196" y="70" width="68" height="32" rx="6" fill="#fff" stroke="#BBF7D0" stroke-width="1"/>
+          <text x="230" y="91" text-anchor="middle" font-size="10" fill="#14532D">Music</text>
+          <text x="155" y="132" text-anchor="middle" font-size="11" fill="#16A34A">⚡ Fast · Temporary · Wiped on shutdown</text>
+          <text x="155" y="148" text-anchor="middle" font-size="10" fill="#16A34A">4 GB – 64 GB typical</text>
+          <line x1="292" y1="72" x2="336" y2="72" stroke="#16A34A" stroke-width="1.5" marker-end="url(#arrd)"/>
+          <text x="314" y="65" text-anchor="middle" font-size="10" fill="#16A34A">Save</text>
+          <line x1="336" y1="88" x2="292" y2="88" stroke="#7C3AED" stroke-width="1.5" marker-end="url(#arrd)"/>
+          <text x="314" y="106" text-anchor="middle" font-size="10" fill="#7C3AED">Open</text>
+          <rect x="350" y="15" width="270" height="130" rx="12" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+          <text x="485" y="42" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-size="14" font-weight="700" fill="#2E1065">Storage (Hard Drive)</text>
+          <text x="485" y="59" text-anchor="middle" font-size="11" fill="#4C1D95">Filing cabinet — saves files PERMANENTLY</text>
+          <rect x="370" y="70" width="230" height="28" rx="6" fill="#fff" stroke="#DDD6FE" stroke-width="1"/>
+          <text x="485" y="89" text-anchor="middle" font-size="10" fill="#2E1065">📁 Documents · Photos · Music · Apps</text>
+          <rect x="370" y="104" width="230" height="28" rx="6" fill="#fff" stroke="#DDD6FE" stroke-width="1"/>
+          <text x="485" y="123" text-anchor="middle" font-size="10" fill="#2E1065">💿 HDD or ⚡ SSD · 256 GB – 4 TB</text>
+          <text x="485" y="148" text-anchor="middle" font-size="11" fill="#7C3AED">🗄️ Permanent · Survives shutdown</text>
+        </svg>
+        <p class="diagram-note">Click a lesson card to learn more about each component</p>
+      </div>
+
+      <div class="analogy-banner">
+        <p>"Imagine your desk at work. Your desk is RAM — it's where you spread out everything you're currently working on. Your filing cabinet is the hard drive — where you store finished work. A tiny desk means you can only work on one thing at a time. A huge desk lets you have 20 things open at once."</p>
+      </div>
+
+      <div class="example-box real">
+        <p>You have Chrome open with 8 tabs, Microsoft Word with a document, and Spotify playing music. All of that is loaded into RAM. If your computer only has 4GB of RAM, it might struggle and start slowing down. With 16GB of RAM, all of that would run smoothly with room to spare.</p>
+      </div>
+
+      <p>RAM is measured in <strong>GB (Gigabytes)</strong>. Here's a quick guide:</p>
+      <table class="compare-table">
+        <thead><tr><th>RAM Amount</th><th>Good For</th><th>Not Good For</th></tr></thead>
+        <tbody>
+          <tr><td>4 GB</td><td>Basic browsing, email, simple documents</td><td>Multiple apps, video calls, gaming</td></tr>
+          <tr><td>8 GB</td><td>Everyday use, light multitasking, video calls</td><td>Video editing, heavy gaming</td></tr>
+          <tr><td>16 GB</td><td>Most tasks comfortably, gaming, photo editing</td><td>Professional video production</td></tr>
+          <tr><td>32 GB+</td><td>Video editing, 3D design, professional work</td><td>—</td></tr>
+        </tbody>
+      </table>
+
+      <div class="quiz-box">
+        <h4>Your computer slows down when you open many apps. What is the most likely cause?</h4>
+        <button class="quiz-option" data-correct="false">The monitor is old</button>
+        <button class="quiz-option" data-correct="true">Not enough RAM</button>
+        <button class="quiz-option" data-correct="false">The keyboard needs charging</button>
+        <button class="quiz-option" data-correct="false">The internet is slow</button>
+        <div class="quiz-feedback"></div>
+      </div>
+
+      <!-- Storage -->
+      <h2 id="storage">Storage — Where Files Live Permanently</h2>
+      <p>While RAM holds temporary data (and forgets everything when you turn off your computer), <strong>storage</strong> keeps your files permanently. When you save a document or install an app, it goes onto your storage device.</p>
+
+      <p>There are two main types of storage:</p>
+
+      <div class="grid-2" style="gap:16px; margin:20px 0;">
+        <div class="card card-blue">
+          <div class="card-icon">💿</div>
+          <h4>HDD — Hard Disk Drive</h4>
+          <p class="text-sm" style="margin-top:6px;">The traditional, older type. Uses spinning magnetic disks to store data. Slower but cheaper and available in large sizes (1–4 TB). Good for storing lots of files.</p>
+        </div>
+        <div class="card card-teal">
+          <div class="card-icon">⚡</div>
+          <h4>SSD — Solid State Drive</h4>
+          <p class="text-sm" style="margin-top:6px;">The modern, faster type. Uses electronic chips with no moving parts. Much faster than HDD — your computer starts in seconds. More expensive but worth it.</p>
+        </div>
+      </div>
+
+      <div class="example-box analogy">
+        <p>An <strong>HDD</strong> is like a vinyl record player — information is stored on spinning disks, and a needle (read head) has to physically move to find it. An <strong>SSD</strong> is like a USB flash drive — everything is electronic and can be accessed instantly, with no moving parts.</p>
+      </div>
+
+      <!-- Monitor -->
+      <h2 id="monitor">The Monitor — Your Window to the Computer</h2>
+      <p>The <strong>monitor</strong> (or screen/display) is the output device that shows you everything the computer is doing. Without it, you would have no way of seeing what is happening inside the machine.</p>
+
+      <p>Key monitor terms to know:</p>
+      <div class="checklist" style="margin:16px 0;">
+        <div class="check-item"><div class="check-icon">✓</div><span class="check-text"><strong>Resolution</strong> — how sharp the image is. Full HD (1920×1080) is standard. 4K is very sharp. Higher = better quality.</span></div>
+        <div class="check-item"><div class="check-icon">✓</div><span class="check-text"><strong>Refresh rate</strong> — how many times per second the screen updates. 60Hz is fine for normal use. 144Hz+ is for gaming.</span></div>
+        <div class="check-item"><div class="check-icon">✓</div><span class="check-text"><strong>Size</strong> — measured diagonally in inches. 24–27 inches is the most popular size for desktop monitors.</span></div>
+      </div>
+
+      <!-- Keyboard & Mouse -->
+      <h2 id="keyboard-mouse">Keyboard &amp; Mouse — Your Input Tools</h2>
+      <p>The <strong>keyboard</strong> and <strong>mouse</strong> are the two most important input devices. They are how you communicate your intentions to the computer.</p>
+
+      <div class="grid-2" style="gap:16px; margin:20px 0;">
+        <div class="card card-orange">
+          <div class="card-icon">⌨️</div>
+          <h4>The Keyboard</h4>
+          <p class="text-sm" style="margin-top:6px;">Used for typing text, numbers, and commands. The keyboard layout is called QWERTY (named after the first 6 letters on the top row). Special keys like <strong>Ctrl</strong>, <strong>Alt</strong>, <strong>Enter</strong>, and <strong>Backspace</strong> have specific functions.</p>
+        </div>
+        <div class="card card-purple">
+          <div class="card-icon">🖱️</div>
+          <h4>The Mouse</h4>
+          <p class="text-sm" style="margin-top:6px;">Used to point, click, and interact with everything on screen. <strong>Left-click</strong> = select or open. <strong>Right-click</strong> = open a menu. <strong>Scroll wheel</strong> = move up and down on a page.</p>
+        </div>
+      </div>
+
+      <div class="example-box real">
+        <p>When you're filling out a job application form online: you use the <strong>mouse</strong> to click into each field, and the <strong>keyboard</strong> to type your name, address, and answers. Together, they are your primary tools for interacting with everything on the computer.</p>
+      </div>
+
+      <!-- Summary Quiz -->
+      <h2 id="summary">Summary Quiz</h2>
+      <p>Let's test everything you've learned in this lesson!</p>
+
+      <div class="quiz-box">
+        <h4>Which part of the computer temporarily holds data while you are actively using programs?</h4>
+        <button class="quiz-option" data-correct="false">Hard Drive (HDD/SSD)</button>
+        <button class="quiz-option" data-correct="true">RAM</button>
+        <button class="quiz-option" data-correct="false">CPU</button>
+        <button class="quiz-option" data-correct="false">Monitor</button>
+        <div class="quiz-feedback"></div>
+      </div>
+
+      <!-- Key Takeaways -->
+      <div style="background:var(--blue-lt); border-radius:var(--radius-lg); padding:28px; margin:32px 0;">
+        <h3 style="color:var(--blue-dk); margin-bottom:16px;">📌 Key Takeaways from This Lesson</h3>
+        <div class="checklist">
+          <div class="check-item"><div class="check-icon">✓</div><span class="check-text"><strong>Hardware</strong> = physical parts you can touch</span></div>
+          <div class="check-item"><div class="check-icon">✓</div><span class="check-text"><strong>CPU</strong> = the brain — does all the processing and calculations</span></div>
+          <div class="check-item"><div class="check-icon">✓</div><span class="check-text"><strong>RAM</strong> = working desk — holds what you're currently doing</span></div>
+          <div class="check-item"><div class="check-icon">✓</div><span class="check-text"><strong>HDD/SSD</strong> = filing cabinet — stores files permanently</span></div>
+          <div class="check-item"><div class="check-icon">✓</div><span class="check-text"><strong>Monitor</strong> = output — shows you what the computer is doing</span></div>
+          <div class="check-item"><div class="check-icon">✓</div><span class="check-text"><strong>Keyboard &amp; Mouse</strong> = input — how you communicate with the computer</span></div>
+        </div>
+      </div>
+
+      <!-- Next Lesson -->
+      <div style="display:flex; gap:12px; justify-content:space-between; flex-wrap:wrap; margin-top:40px; padding-top:32px; border-top:1px solid var(--border);">
+        <a href="lessons.html" class="btn btn-ghost">← All Lessons</a>
+        <a href="lesson-internet.html" class="btn btn-primary">Next: How the Internet Works →</a>
+      </div>
+
+    </article>
+
+    <!-- Sidebar -->
+    <aside class="article-sidebar">
+      <div class="sidebar-toc">
+        <h5>📋 In This Lesson</h5>
+        <a href="#what-is-hardware">What is Hardware?</a>
+        <a href="#input-output">Input vs Output</a>
+        <a href="#cpu">The CPU (Brain)</a>
+        <a href="#ram">RAM (Working Memory)</a>
+        <a href="#storage">Storage (Hard Drive)</a>
+        <a href="#monitor">The Monitor</a>
+        <a href="#keyboard-mouse">Keyboard &amp; Mouse</a>
+        <a href="#summary">Summary Quiz</a>
+      </div>
+      <div class="sidebar-related-photos">
+        <h5>📸 Related Lessons</h5>
+        <a href="lesson-hardware.html" class="related-photo-item">
+          <div class="related-photo-thumb"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 400 220" style="display:block;border-radius:8px;min-width:44px;" preserveAspectRatio="xMidYMid slice">
+  <rect width="400" height="220" fill="#DCFCE7"/>
+  <rect x="0" y="0" width="400" height="220" fill="#DCFCE7" opacity="0.6"/>
+  <!-- subtle grid pattern -->
+  <line x1="0" y1="55" x2="400" y2="55" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="110" x2="400" y2="110" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="165" x2="400" y2="165" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="100" y1="0" x2="100" y2="220" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="200" y1="0" x2="200" y2="220" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="300" y1="0" x2="300" y2="220" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <!-- icon circle -->
+  <circle cx="200" cy="100" r="52" fill="#14532D" opacity="0.12"/>
+  <circle cx="200" cy="100" r="40" fill="#14532D" opacity="0.1"/>
+  <text x="200" y="116" text-anchor="middle" font-size="52" dominant-baseline="middle">🖥️</text>
+  <!-- label pill -->
+  <rect x="130" y="155" width="140" height="28" rx="14" fill="#14532D" opacity="0.15"/>
+  <text x="200" y="174" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#14532D">Computer Hardware</text>
+</svg></div>
+          <div class="related-photo-info"><div class="rp-title">Computer Hardware</div><div class="rp-meta">Lesson 1 · 15 min</div></div>
+        </a>
+        <a href="lesson-internet.html" class="related-photo-item">
+          <div class="related-photo-thumb"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 400 220" style="display:block;border-radius:8px;min-width:44px;" preserveAspectRatio="xMidYMid slice">
+  <rect width="400" height="220" fill="#E0F2FE"/>
+  <rect x="0" y="0" width="400" height="220" fill="#E0F2FE" opacity="0.6"/>
+  <!-- subtle grid pattern -->
+  <line x1="0" y1="55" x2="400" y2="55" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="110" x2="400" y2="110" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="165" x2="400" y2="165" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="100" y1="0" x2="100" y2="220" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="200" y1="0" x2="200" y2="220" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="300" y1="0" x2="300" y2="220" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <!-- icon circle -->
+  <circle cx="200" cy="100" r="52" fill="#075985" opacity="0.12"/>
+  <circle cx="200" cy="100" r="40" fill="#075985" opacity="0.1"/>
+  <text x="200" y="116" text-anchor="middle" font-size="52" dominant-baseline="middle">🌐</text>
+  <!-- label pill -->
+  <rect x="130" y="155" width="140" height="28" rx="14" fill="#075985" opacity="0.15"/>
+  <text x="200" y="174" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#075985">Internet & Networks</text>
+</svg></div>
+          <div class="related-photo-info"><div class="rp-title">How the Internet Works</div><div class="rp-meta">Lesson 10 · 12 min</div></div>
+        </a>
+        <a href="lesson-passwords.html" class="related-photo-item">
+          <div class="related-photo-thumb"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 400 220" style="display:block;border-radius:8px;min-width:44px;" preserveAspectRatio="xMidYMid slice">
+  <rect width="400" height="220" fill="#DCFCE7"/>
+  <rect x="0" y="0" width="400" height="220" fill="#DCFCE7" opacity="0.6"/>
+  <!-- subtle grid pattern -->
+  <line x1="0" y1="55" x2="400" y2="55" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="110" x2="400" y2="110" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="165" x2="400" y2="165" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="100" y1="0" x2="100" y2="220" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="200" y1="0" x2="200" y2="220" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="300" y1="0" x2="300" y2="220" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <!-- icon circle -->
+  <circle cx="200" cy="100" r="52" fill="#14532D" opacity="0.12"/>
+  <circle cx="200" cy="100" r="40" fill="#14532D" opacity="0.1"/>
+  <text x="200" y="116" text-anchor="middle" font-size="52" dominant-baseline="middle">🔐</text>
+  <!-- label pill -->
+  <rect x="130" y="155" width="140" height="28" rx="14" fill="#14532D" opacity="0.15"/>
+  <text x="200" y="174" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#14532D">Password Security</text>
+</svg></div>
+          <div class="related-photo-info"><div class="rp-title">Strong Passwords</div><div class="rp-meta">Lesson 16 · 8 min</div></div>
+        </a>
+        <a href="lesson-files-folders.html" class="related-photo-item">
+          <div class="related-photo-thumb"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 400 220" style="display:block;border-radius:8px;min-width:44px;" preserveAspectRatio="xMidYMid slice">
+  <rect width="400" height="220" fill="#FFF7ED"/>
+  <rect x="0" y="0" width="400" height="220" fill="#FFF7ED" opacity="0.6"/>
+  <!-- subtle grid pattern -->
+  <line x1="0" y1="55" x2="400" y2="55" stroke="#92400E" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="110" x2="400" y2="110" stroke="#92400E" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="165" x2="400" y2="165" stroke="#92400E" stroke-width="0.4" opacity="0.15"/>
+  <line x1="100" y1="0" x2="100" y2="220" stroke="#92400E" stroke-width="0.4" opacity="0.15"/>
+  <line x1="200" y1="0" x2="200" y2="220" stroke="#92400E" stroke-width="0.4" opacity="0.15"/>
+  <line x1="300" y1="0" x2="300" y2="220" stroke="#92400E" stroke-width="0.4" opacity="0.15"/>
+  <!-- icon circle -->
+  <circle cx="200" cy="100" r="52" fill="#92400E" opacity="0.12"/>
+  <circle cx="200" cy="100" r="40" fill="#92400E" opacity="0.1"/>
+  <text x="200" y="116" text-anchor="middle" font-size="52" dominant-baseline="middle">📂</text>
+  <!-- label pill -->
+  <rect x="130" y="155" width="140" height="28" rx="14" fill="#92400E" opacity="0.15"/>
+  <text x="200" y="174" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#92400E">Files & Folders</text>
+</svg></div>
+          <div class="related-photo-info"><div class="rp-title">Files &amp; Folders</div><div class="rp-meta">Lesson 7 · 9 min</div></div>
+        </a>
+      </div>
+      <div class="ad-zone tall">📢 Ad (300×250)</div>
+      <div style="background:var(--orange-lt); border:1.5px solid rgba(255,107,44,0.2); border-radius:var(--radius-lg); padding:20px; margin-top:20px;">
+        <h5 style="font-family:var(--font-d); color:var(--text); margin-bottom:8px;">🎯 Next Lesson</h5>
+        <p style="font-size:0.85rem; margin-bottom:12px;">Learn how the internet really works — websites, WiFi, browsers, and more.</p>
+        <a href="lesson-internet.html" class="btn btn-orange btn-sm" style="width:100%; justify-content:center;">How the Internet Works →</a>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;">
+      <p style="color:rgba(255,255,255,0.5);">© 2026 LearnLu · Free computer education for everyone</p>
+      <p style="font-size:0.78rem; color:rgba(255,255,255,0.45); margin-top:4px;">Created &amp; maintained by <strong style="color:rgba(255,255,255,0.65); font-weight:600;">Taofeek Habeebullah Richard</strong> &mdash; Founder, LearnLu</p>
+      <div style="display:flex;gap:18px;flex-wrap:wrap;">
+        <a href="../pages/privacy.html" style="color:rgba(255,255,255,0.55);font-size:0.82rem;">Privacy Policy</a>
+        <a href="../pages/terms.html" style="color:rgba(255,255,255,0.55);font-size:0.82rem;">Terms of Service</a>
+        <a href="terms.html" style="color:rgba(255,255,255,0.55);font-size:0.82rem;">Terms of Service</a>
+        <a href="../pages/disclaimer.html" style="color:rgba(255,255,255,0.55);font-size:0.82rem;">Disclaimer</a>
+        <a href="../pages/about.html" style="color:rgba(255,255,255,0.55);font-size:0.82rem;">About</a>
+        <a href="../pages/contact.html" style="color:rgba(255,255,255,0.55);font-size:0.82rem;">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/theme-switcher.js"></script>
+<script src="../assets/js/cookie-consent.js"></script>
+</body>
+</html>

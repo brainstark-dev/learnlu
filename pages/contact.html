@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="forest">
+<head>
+  <meta charset="UTF-8"/>
+    <meta name="description" content="Contact LearnLu — get in touch with questions, feedback, or suggestions about our free computer lessons for beginners."/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — LearnLu</title>
+  <!-- Google Analytics GA4 — Replace G-XXXXXXXXXX with your real Measurement ID -->
+  <!-- Get your ID at: analytics.google.com -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <link rel="sitemap" type="application/xml" href="../sitemap.xml"/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content="@LearnLu"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://learnlu.com/pages/contact.html"/>
+  <meta property="og:site_name" content="LearnLu"/>
+  <meta property="og:description" content="Contact LearnLu — get in touch with questions, feedback, or suggestions about our free computer lessons for beginners."/>
+  <meta property="og:title" content="Contact — LearnLu"/>
+  <link rel="canonical" href="https://learnlu.com/pages/contact.html"/>
+  <link rel="stylesheet" href="../assets/css/style.css"/>
+  <link rel="stylesheet" href="../assets/css/images.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+<nav id="navbar">
+  <!-- Row 1: Logo + CTA -->
+  <div class="nav-row-top">
+    <a href="../index.html" class="nav-logo">
+      <div class="logo-mark">💻</div>
+      Learn<span class="accent">Lu</span>
+    </a>
+    <div class="nav-right">
+      <a href="lessons.html" class="btn btn-primary btn-sm">All Lessons →</a>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+  <!-- Row 2: Page links -->
+  <ul class="nav-links nav-row-bottom">
+    <li><a href="../index.html">🏠 Home</a></li>
+    <li><a href="lesson-hardware.html">🖥️ Hardware</a></li>
+    <li><a href="lesson-internet.html">🌐 Internet</a></li>
+    <li><a href="faq.html">❓ FAQ</a></li>
+    <li><a href="about.html">ℹ️ About</a></li>
+  </ul>
+</nav>
+<div class="mobile-menu" id="mobileMenu"><a href="../index.html">Home</a><a href="lessons.html">Lessons</a></div>
+<section style="padding:calc(var(--nav-h) + 60px) 0 80px;">
+  <div class="container" style="max-width:640px;">
+    <h1 style="margin-bottom:8px;">Contact Us</h1>
+    <p style="color:var(--text-2); margin-bottom:20px;">Have a question about a lesson, spotted an error, or want to suggest a topic? We'd love to hear from you.</p>
+
+    <div style="display:flex;align-items:center;gap:12px;background:var(--blue-lt);border:1.5px solid rgba(26,107,240,0.2);border-radius:var(--radius-lg);padding:16px 20px;margin-bottom:28px;">
+      <span style="font-size:1.5rem;">📧</span>
+      <div>
+        <div style="font-size:0.8rem;font-weight:600;color:var(--text-3);text-transform:uppercase;letter-spacing:0.07em;margin-bottom:3px;">Email us directly</div>
+        <a href="mailto:hello@learnlu.com" style="font-size:1.05rem;font-weight:700;color:var(--blue);">hello@learnlu.com</a>
+        <div style="font-size:0.8rem;color:var(--text-3);margin-top:2px;">We reply within 48 hours</div>
+      </div>
+    </div>
+
+    <div class="card" style="padding:36px;">
+      <form id="contactForm" style="display:flex; flex-direction:column; gap:20px;">
+        <div>
+          <label style="display:block; font-size:0.85rem; font-weight:600; color:var(--text); margin-bottom:8px;">Your Name</label>
+          <input type="text" placeholder="Ada Okonkwo" required style="width:100%; padding:13px 18px; background:var(--off-white); border:1.5px solid var(--border); border-radius:var(--radius); color:var(--text); font-family:var(--font-b); font-size:0.95rem; outline:none; transition:border-color 0.2s;" onfocus="this.style.borderColor='var(--blue)'" onblur="this.style.borderColor='var(--border)'">
+        </div>
+        <div>
+          <label style="display:block; font-size:0.85rem; font-weight:600; color:var(--text); margin-bottom:8px;">Email Address</label>
+          <input type="email" placeholder="you@example.com" required style="width:100%; padding:13px 18px; background:var(--off-white); border:1.5px solid var(--border); border-radius:var(--radius); color:var(--text); font-family:var(--font-b); font-size:0.95rem; outline:none; transition:border-color 0.2s;" onfocus="this.style.borderColor='var(--blue)'" onblur="this.style.borderColor='var(--border)'">
+        </div>
+        <div>
+          <label style="display:block; font-size:0.85rem; font-weight:600; color:var(--text); margin-bottom:8px;">Subject</label>
+          <select style="width:100%; padding:13px 18px; background:var(--off-white); border:1.5px solid var(--border); border-radius:var(--radius); color:var(--text); font-family:var(--font-b); font-size:0.95rem; outline:none;">
+            <option>Question about a lesson</option>
+            <option>Found an error</option>
+            <option>Topic suggestion</option>
+            <option>General feedback</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div>
+          <label style="display:block; font-size:0.85rem; font-weight:600; color:var(--text); margin-bottom:8px;">Message</label>
+          <textarea rows="5" placeholder="Your message here..." required style="width:100%; padding:13px 18px; background:var(--off-white); border:1.5px solid var(--border); border-radius:var(--radius); color:var(--text); font-family:var(--font-b); font-size:0.95rem; outline:none; resize:vertical; transition:border-color 0.2s;" onfocus="this.style.borderColor='var(--blue)'" onblur="this.style.borderColor='var(--border)'"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="align-self:flex-start;" onclick="event.preventDefault(); showToast('✅ Message received! We\'ll reply within 48 hours.', 'success');">Send Message →</button>
+      </form>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <div class="footer-bottom">
+      <p style="color:rgba(255,255,255,0.5);">© 2026 LearnLu. <a href="../index.html" style="color:rgba(255,255,255,0.6);">Back to Home</a></p>
+      <p style="font-size:0.78rem; color:rgba(255,255,255,0.45); margin-top:4px;">Created &amp; maintained by <strong style="color:rgba(255,255,255,0.65); font-weight:600;">Taofeek Habeebullah Richard</strong> &mdash; Founder, LearnLu</p>
+    </div>
+  </div>
+  <div class="container" style="padding:12px 24px 16px;border-top:1px solid rgba(255,255,255,0.08);">
+      <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:10px;">
+        <a href="privacy.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;">Privacy Policy</a>
+        <a href="terms.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;">Terms of Service</a>
+        <a href="disclaimer.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;">Disclaimer</a>
+        <a href="contact.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;">Contact</a>
+        <a href="about.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;">About</a>
+      </div>
+  </div>
+</footer>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/theme-switcher.js"></script>
+<script src="../assets/js/cookie-consent.js"></script>
+</body>
+</html>

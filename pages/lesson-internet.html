@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="forest">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="How does the internet work? Simple explanation for beginners. Learn about websites, WiFi, browsers, and how data travels around the world."/>
+  <title>How the Internet Works — Explained for Beginners — LearnLu</title>
+  <!-- Google Analytics GA4 — Replace G-XXXXXXXXXX with your real Measurement ID -->
+  <!-- Get your ID at: analytics.google.com -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <link rel="sitemap" type="application/xml" href="../sitemap.xml"/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content="@LearnLu"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://learnlu.com/pages/lesson-internet.html"/>
+  <meta property="og:site_name" content="LearnLu"/>
+  <meta property="og:description" content="How does the internet work? Simple explanation for beginners. Learn about websites, WiFi, browsers, and how data travels around the world."/>
+  <meta property="og:title" content="How the Internet Works — Explained for Beginners — LearnLu"/>
+  <link rel="canonical" href="https://learnlu.com/pages/lesson-internet.html"/>
+  <link rel="stylesheet" href="../assets/css/style.css"/>
+  <link rel="stylesheet" href="../assets/css/images.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌐</text></svg>">
+</head>
+<body>
+
+<div class="reading-progress"><div class="reading-fill"></div></div>
+
+<nav id="navbar">
+  <!-- Row 1: Logo + CTA -->
+  <div class="nav-row-top">
+    <a href="../index.html" class="nav-logo">
+      <div class="logo-mark">💻</div>
+      Learn<span class="accent">Lu</span>
+    </a>
+    <div class="nav-right">
+      <a href="lessons.html" class="btn btn-primary btn-sm">All Lessons →</a>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+  <!-- Row 2: Page links -->
+  <ul class="nav-links nav-row-bottom">
+    <li><a href="../index.html">🏠 Home</a></li>
+    <li><a href="lesson-hardware.html">🖥️ Hardware</a></li>
+    <li><a href="lesson-internet.html" class="active">🌐 Internet</a></li>
+    <li><a href="faq.html">❓ FAQ</a></li>
+    <li><a href="about.html">ℹ️ About</a></li>
+  </ul>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="../index.html">Home</a>
+  <a href="lessons.html">All Lessons</a>
+  <a href="lesson-hardware.html">Hardware</a>
+  <a href="lesson-internet.html">Internet</a>
+  <a href="faq.html">FAQ</a>
+</div>
+
+<section style="padding:calc(var(--nav-h) + 48px) 0 40px; background:linear-gradient(135deg, var(--teal-lt) 0%, var(--off-white) 100%);">
+  <div class="container" style="max-width:900px;">
+    <div style="display:flex; align-items:center; gap:8px; font-size:0.82rem; color:var(--text-3); margin-bottom:16px;">
+      <a href="../index.html" style="color:var(--text-3);">Home</a> › <a href="lessons.html" style="color:var(--text-3);">Lessons</a> › <span style="color:var(--teal);">Internet</span>
+    </div>
+    <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:18px;">
+      <span class="badge badge-beginner">Beginner</span>
+      <span class="badge badge-teal">⏱ 12 min read</span>
+      <span class="badge badge-blue">🧠 3 Mini Quizzes</span>
+    </div>
+    <h1 style="font-size:clamp(1.8rem,4vw,3rem); margin-bottom:14px;">How the Internet Works — Explained Simply</h1>
+    <p style="font-size:1.1rem; color:var(--text-2); max-width:640px;">Billions of people use the internet every day — but very few understand how it actually works. This lesson breaks it all down using everyday comparisons you will immediately understand.</p>
+  </div>
+</section>
+
+<div class="container" style="max-width:900px;">
+  <div class="ad-zone">📢 Advertisement — Google AdSense (728×90)</div>
+</div>
+
+<div class="container" style="max-width:900px; padding-bottom:100px;">
+  <div class="article-layout">
+
+    <article class="article-content">
+
+      <!-- Image type badges -->
+      <div class="image-type-badges">
+        <span class="img-badge img-badge-photo">📸 Real Photos</span>
+        <span class="img-badge img-badge-svg">📊 SVG Diagrams</span>
+        <span class="img-badge img-badge-icon">🎨 Icon Visuals</span>
+      </div>
+
+      <!-- Hero Photo -->
+      <div class="lesson-hero-photo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="280" viewBox="0 0 400 220" style="display:block;" preserveAspectRatio="xMidYMid slice">
+  <rect width="400" height="220" fill="#E0F2FE"/>
+  <rect x="0" y="0" width="400" height="220" fill="#E0F2FE" opacity="0.6"/>
+  <!-- subtle grid pattern -->
+  <line x1="0" y1="55" x2="400" y2="55" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="110" x2="400" y2="110" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="165" x2="400" y2="165" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="100" y1="0" x2="100" y2="220" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="200" y1="0" x2="200" y2="220" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="300" y1="0" x2="300" y2="220" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <!-- icon circle -->
+  <circle cx="200" cy="100" r="52" fill="#075985" opacity="0.12"/>
+  <circle cx="200" cy="100" r="40" fill="#075985" opacity="0.1"/>
+  <text x="200" y="116" text-anchor="middle" font-size="52" dominant-baseline="middle">🌐</text>
+  <!-- label pill -->
+  <rect x="130" y="155" width="140" height="28" rx="14" fill="#075985" opacity="0.15"/>
+  <text x="200" y="174" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#075985">Internet & Networks</text>
+</svg>
+        <div class="photo-caption-overlay">
+          <strong>The internet's physical infrastructure</strong>
+          Millions of cables like these connect every computer on the planet — running under oceans and across continents
+        </div>
+      </div>
+      <p class="unsplash-credit">Photo: Unsplash · Free to use commercially</p>
+
+      <h2 id="what-is-internet">What is the Internet?</h2>
+      <p>The internet is a massive, global network of computers and devices that are all connected together. Think of it as the world's largest library, post office, phone network, and marketplace — all combined into one system that is available 24 hours a day, 7 days a week.</p>
+
+      <div class="analogy-banner">
+        <p>"The internet is like the world's road system. Every computer is a building, and internet cables are the roads connecting them. When you visit a website, it's like driving from your house to a shop, picking up information, and driving back home."</p>
+      </div>
+
+      <!-- SVG Diagram: How internet works -->
+      <div class="diagram-container">
+        <div class="diagram-title">
+          <span class="diagram-badge">📊 SVG Diagram</span>
+          Your device → WiFi → ISP → Internet → Website
+        </div>
+        <svg width="100%" viewBox="0 0 640 140" xmlns="http://www.w3.org/2000/svg" style="display:block">
+          <defs><marker id="awi" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#0284C7" stroke-width="1.5" stroke-linecap="round"/></marker></defs>
+          <rect x="10" y="30" width="90" height="56" rx="10" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+          <text x="55" y="55" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-size="12" font-weight="700" fill="#14532D">Your</text>
+          <text x="55" y="70" text-anchor="middle" font-size="11" fill="#166534">Device</text>
+          <text x="55" y="98" text-anchor="middle" font-size="9" fill="#16A34A">Phone/Laptop</text>
+          <rect x="136" y="38" width="82" height="40" rx="10" fill="#E0F2FE" stroke="#0284C7" stroke-width="1.5"/>
+          <text x="177" y="56" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-size="12" font-weight="700" fill="#075985">WiFi</text>
+          <text x="177" y="71" text-anchor="middle" font-size="10" fill="#0369A1">Router</text>
+          <rect x="254" y="30" width="90" height="56" rx="10" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+          <text x="299" y="55" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-size="12" font-weight="700" fill="#92400E">Internet</text>
+          <text x="299" y="70" text-anchor="middle" font-size="10" fill="#92400E">Provider</text>
+          <text x="299" y="98" text-anchor="middle" font-size="9" fill="#D97706">MTN, Airtel…</text>
+          <rect x="380" y="30" width="90" height="56" rx="10" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+          <text x="425" y="55" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-size="12" font-weight="700" fill="#2E1065">Global</text>
+          <text x="425" y="70" text-anchor="middle" font-size="11" fill="#4C1D95">Internet</text>
+          <text x="425" y="98" text-anchor="middle" font-size="9" fill="#7C3AED">Worldwide network</text>
+          <rect x="506" y="30" width="90" height="56" rx="10" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+          <text x="551" y="55" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-size="12" font-weight="700" fill="#14532D">Website</text>
+          <text x="551" y="70" text-anchor="middle" font-size="11" fill="#166534">Server</text>
+          <text x="551" y="98" text-anchor="middle" font-size="9" fill="#16A34A">google.com…</text>
+          <line x1="100" y1="58" x2="134" y2="58" stroke="#0284C7" stroke-width="1.5" marker-end="url(#awi)"/>
+          <line x1="218" y1="58" x2="252" y2="58" stroke="#0284C7" stroke-width="1.5" marker-end="url(#awi)"/>
+          <line x1="344" y1="58" x2="378" y2="58" stroke="#0284C7" stroke-width="1.5" marker-end="url(#awi)"/>
+          <line x1="470" y1="58" x2="504" y2="58" stroke="#0284C7" stroke-width="1.5" marker-end="url(#awi)"/>
+          <text x="320" y="128" text-anchor="middle" font-size="10" fill="#718096">All 4 steps happen in under 1 second every time you visit a website</text>
+        </svg>
+      </div>
+
+      <p>The internet is NOT the same as:</p>
+      <ul>
+        <li>❌ <strong>WiFi</strong> — WiFi is just one method of connecting TO the internet (the on-ramp to the highway)</li>
+        <li>❌ <strong>The Web (websites)</strong> — websites are just one type of content that runs <em>on top of</em> the internet</li>
+        <li>❌ <strong>Your phone data</strong> — that's another way to connect, but still uses the same global internet infrastructure</li>
+      </ul>
+
+      <div class="example-box real">
+        <p>When you send a WhatsApp message from Lagos, Nigeria to someone in London, UK: your message travels through fibre optic cables under the ocean — crossing thousands of miles in under a second. This is the internet at work.</p>
+      </div>
+
+      <h2 id="how-websites-work">How Do Websites Work?</h2>
+      <p>Every website is made of files (text, images, videos) that are stored on a powerful computer called a <strong>server</strong>. A server is just a computer that runs 24/7 and is designed to send information to anyone who asks for it.</p>
+
+      <div class="step-list" style="margin:24px 0;">
+        <div class="step-item">
+          <div class="step-num teal">1</div>
+          <div class="step-body">
+            <h4>You type a web address (URL)</h4>
+            <p>For example, you type <strong>www.google.com</strong> into your browser.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num teal">2</div>
+          <div class="step-body">
+            <h4>Your computer finds Google's address (DNS Lookup)</h4>
+            <p>The internet's phone book (called DNS) converts "google.com" into a numerical address (called an IP address) like 142.250.64.100. This is how computers actually find each other.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num teal">3</div>
+          <div class="step-body">
+            <h4>Your computer sends a request to Google's server</h4>
+            <p>Your computer sends a message: "Please send me your homepage." This travels through cables and routers across the world.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num teal">4</div>
+          <div class="step-body">
+            <h4>Google's server sends back the webpage files</h4>
+            <p>The server sends back the HTML, CSS, and images that make up the Google homepage.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num teal">5</div>
+          <div class="step-body">
+            <h4>Your browser displays the webpage</h4>
+            <p>Your browser (Chrome, Firefox, etc.) reads those files and draws the beautiful website you see on screen.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="example-box analogy">
+        <p>Visiting a website is like ordering food at a restaurant: (1) You order from the menu (type the URL). (2) The waiter finds the chef (DNS finds the server). (3) The kitchen prepares your meal (server sends the files). (4) The waiter brings it to your table (browser receives data). (5) You eat (browser displays the page). The whole process takes about 0.1–2 seconds!</p>
+      </div>
+
+      <div class="quiz-box">
+        <h4>What is a web server?</h4>
+        <button class="quiz-option" data-correct="false">A type of WiFi router</button>
+        <button class="quiz-option" data-correct="false">The physical internet cables under the ocean</button>
+        <button class="quiz-option" data-correct="true">A computer that stores website files and sends them to visitors</button>
+        <button class="quiz-option" data-correct="false">Your internet browser (Chrome/Firefox)</button>
+        <div class="quiz-feedback"></div>
+      </div>
+
+      <h2 id="wifi-vs-internet">WiFi vs Internet vs Mobile Data</h2>
+      <p>These three terms confuse many beginners. Here is the clear distinction:</p>
+
+      <table class="compare-table">
+        <thead><tr><th>Term</th><th>What it is</th><th>Analogy</th></tr></thead>
+        <tbody>
+          <tr><td>🌐 <strong>Internet</strong></td><td>The global network of all connected computers</td><td>The highway system</td></tr>
+          <tr><td>📶 <strong>WiFi</strong></td><td>Wireless technology to connect your device to a local network/router</td><td>The on-ramp to the highway</td></tr>
+          <tr><td>📱 <strong>Mobile Data</strong></td><td>Cellular connection (4G/5G) to the internet via phone towers</td><td>A helicopter route to the highway</td></tr>
+          <tr><td>🔌 <strong>Ethernet</strong></td><td>A physical cable connecting your device directly to the router</td><td>A private dedicated road</td></tr>
+        </tbody>
+      </table>
+
+      <div class="example-box real">
+        <p>Your WiFi can be on but your internet can be down. This happens when your router is working (you can connect devices to it) but your ISP (Internet Service Provider) has an outage. In this case, your phone can connect to WiFi but still can't open any websites — because the road (internet) is blocked, even though your car (device) started fine.</p>
+      </div>
+
+      <div class="quiz-box">
+        <h4>Your phone shows "Connected to WiFi" but websites won't load. What is the problem?</h4>
+        <button class="quiz-option" data-correct="false">Your phone's screen is broken</button>
+        <button class="quiz-option" data-correct="false">Your WiFi password is wrong</button>
+        <button class="quiz-option" data-correct="true">The internet connection itself is down (ISP outage)</button>
+        <button class="quiz-option" data-correct="false">Your browser needs updating</button>
+        <div class="quiz-feedback"></div>
+      </div>
+
+      <h2 id="browsers">Web Browsers — Your Window to the Web</h2>
+      <p>A <strong>web browser</strong> is the app you use to visit websites. It's the tool that requests web pages, receives the files, and displays them visually on your screen. Without a browser, you'd see raw code — not beautiful websites.</p>
+
+      <div class="grid-2" style="gap:16px; margin:20px 0;">
+        <div class="card card-blue">
+          <div class="card-icon">🔵</div>
+          <h4>Google Chrome</h4>
+          <p class="text-sm" style="margin-top:6px;">The most popular browser worldwide. Fast, supports many extensions. Made by Google. Best for most users.</p>
+        </div>
+        <div class="card card-orange">
+          <div class="card-icon">🦊</div>
+          <h4>Mozilla Firefox</h4>
+          <p class="text-sm" style="margin-top:6px;">Open-source and privacy-focused. Great alternative to Chrome. Very customisable.</p>
+        </div>
+        <div class="card card-teal">
+          <div class="card-icon">🔷</div>
+          <h4>Microsoft Edge</h4>
+          <p class="text-sm" style="margin-top:6px;">Built into Windows. Modern and fast, uses the same engine as Chrome. Good default choice.</p>
+        </div>
+        <div class="card card-purple">
+          <div class="card-icon">🧭</div>
+          <h4>Safari</h4>
+          <p class="text-sm" style="margin-top:6px;">Apple's browser, built into Mac and iPhone. Fastest on Apple devices and great for battery life.</p>
+        </div>
+      </div>
+
+      <div class="example-box tip">
+        <p>Every browser has an <strong>address bar</strong> at the top where you type web addresses (URLs). URLs always start with <strong>https://</strong> — the "s" stands for secure. Always check for the padlock icon 🔒 and "https" before entering personal information like passwords or bank details on a website.</p>
+      </div>
+
+      <h2 id="email">Email — Electronic Mail</h2>
+      <p>Email (electronic mail) lets you send messages, files, and images to anyone in the world instantly, for free. Each email address is unique — it's like a personal postal address, but digital.</p>
+
+      <div class="analogy-banner">
+        <p>"Email is like the postal system, but instant. Your email address is your house address. The email server is the post office. Sending an email is like dropping a letter in a postbox — it arrives at the other person's inbox (mailbox) in seconds, not days."</p>
+      </div>
+
+      <p>An email address has two parts separated by an <strong>@</strong> symbol:</p>
+      <div class="code-block">
+        <span class="string">yourname</span><span class="keyword">@</span><span class="string">gmail.com</span><br>
+        <span class="comment">│            │</span><br>
+        <span class="comment">Your username  The email service provider</span>
+      </div>
+
+      <div class="quiz-box">
+        <h4>What does the padlock icon 🔒 in a browser's address bar mean?</h4>
+        <button class="quiz-option" data-correct="false">The website is popular</button>
+        <button class="quiz-option" data-correct="true">The connection is encrypted and secure (HTTPS)</button>
+        <button class="quiz-option" data-correct="false">You need a password to visit the site</button>
+        <button class="quiz-option" data-correct="false">The page is loading</button>
+        <div class="quiz-feedback"></div>
+      </div>
+
+      <div style="background:var(--teal-lt); border-radius:var(--radius-lg); padding:28px; margin:32px 0;">
+        <h3 style="color:#065f52; margin-bottom:16px;">📌 Key Takeaways from This Lesson</h3>
+        <div class="checklist">
+          <div class="check-item"><div class="check-icon">✓</div><span class="check-text">The <strong>internet</strong> is a global network connecting billions of computers</span></div>
+          <div class="check-item"><div class="check-icon">✓</div><span class="check-text"><strong>WiFi</strong> and <strong>mobile data</strong> are just ways of connecting to the internet — not the internet itself</span></div>
+          <div class="check-item"><div class="check-icon">✓</div><span class="check-text">Websites are files stored on <strong>servers</strong> — your browser fetches and displays them</span></div>
+          <div class="check-item"><div class="check-icon">✓</div><span class="check-text">Always check for 🔒 <strong>HTTPS</strong> before entering personal data</span></div>
+          <div class="check-item"><div class="check-icon">✓</div><span class="check-text">Your <strong>email address</strong> is your unique digital identity on the internet</span></div>
+        </div>
+      </div>
+
+      <div style="display:flex; gap:12px; justify-content:space-between; flex-wrap:wrap; margin-top:40px; padding-top:32px; border-top:1px solid var(--border);">
+        <a href="lesson-hardware.html" class="btn btn-ghost">← Previous: Hardware</a>
+        <a href="lessons.html" class="btn btn-primary">Browse All Lessons →</a>
+      </div>
+
+    </article>
+
+    <aside class="article-sidebar">
+      <div class="sidebar-toc">
+        <h5>📋 In This Lesson</h5>
+        <a href="#what-is-internet">What is the Internet?</a>
+        <a href="#how-websites-work">How Websites Work</a>
+        <a href="#wifi-vs-internet">WiFi vs Internet</a>
+        <a href="#browsers">Web Browsers</a>
+        <a href="#email">Email Explained</a>
+      </div>
+      <div class="sidebar-related-photos">
+        <h5>📸 Related Lessons</h5>
+        <a href="lesson-hardware.html" class="related-photo-item">
+          <div class="related-photo-thumb"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 400 220" style="display:block;border-radius:8px;min-width:44px;" preserveAspectRatio="xMidYMid slice">
+  <rect width="400" height="220" fill="#DCFCE7"/>
+  <rect x="0" y="0" width="400" height="220" fill="#DCFCE7" opacity="0.6"/>
+  <!-- subtle grid pattern -->
+  <line x1="0" y1="55" x2="400" y2="55" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="110" x2="400" y2="110" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="165" x2="400" y2="165" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="100" y1="0" x2="100" y2="220" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="200" y1="0" x2="200" y2="220" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="300" y1="0" x2="300" y2="220" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <!-- icon circle -->
+  <circle cx="200" cy="100" r="52" fill="#14532D" opacity="0.12"/>
+  <circle cx="200" cy="100" r="40" fill="#14532D" opacity="0.1"/>
+  <text x="200" y="116" text-anchor="middle" font-size="52" dominant-baseline="middle">🖥️</text>
+  <!-- label pill -->
+  <rect x="130" y="155" width="140" height="28" rx="14" fill="#14532D" opacity="0.15"/>
+  <text x="200" y="174" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#14532D">Computer Hardware</text>
+</svg></div>
+          <div class="related-photo-info"><div class="rp-title">Computer Hardware</div><div class="rp-meta">Lesson 1 · 15 min</div></div>
+        </a>
+        <a href="lesson-internet.html" class="related-photo-item">
+          <div class="related-photo-thumb"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 400 220" style="display:block;border-radius:8px;min-width:44px;" preserveAspectRatio="xMidYMid slice">
+  <rect width="400" height="220" fill="#E0F2FE"/>
+  <rect x="0" y="0" width="400" height="220" fill="#E0F2FE" opacity="0.6"/>
+  <!-- subtle grid pattern -->
+  <line x1="0" y1="55" x2="400" y2="55" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="110" x2="400" y2="110" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="165" x2="400" y2="165" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="100" y1="0" x2="100" y2="220" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="200" y1="0" x2="200" y2="220" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <line x1="300" y1="0" x2="300" y2="220" stroke="#075985" stroke-width="0.4" opacity="0.15"/>
+  <!-- icon circle -->
+  <circle cx="200" cy="100" r="52" fill="#075985" opacity="0.12"/>
+  <circle cx="200" cy="100" r="40" fill="#075985" opacity="0.1"/>
+  <text x="200" y="116" text-anchor="middle" font-size="52" dominant-baseline="middle">🌐</text>
+  <!-- label pill -->
+  <rect x="130" y="155" width="140" height="28" rx="14" fill="#075985" opacity="0.15"/>
+  <text x="200" y="174" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#075985">Internet & Networks</text>
+</svg></div>
+          <div class="related-photo-info"><div class="rp-title">How the Internet Works</div><div class="rp-meta">Lesson 10 · 12 min</div></div>
+        </a>
+        <a href="lesson-passwords.html" class="related-photo-item">
+          <div class="related-photo-thumb"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 400 220" style="display:block;border-radius:8px;min-width:44px;" preserveAspectRatio="xMidYMid slice">
+  <rect width="400" height="220" fill="#DCFCE7"/>
+  <rect x="0" y="0" width="400" height="220" fill="#DCFCE7" opacity="0.6"/>
+  <!-- subtle grid pattern -->
+  <line x1="0" y1="55" x2="400" y2="55" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="110" x2="400" y2="110" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="165" x2="400" y2="165" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="100" y1="0" x2="100" y2="220" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="200" y1="0" x2="200" y2="220" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <line x1="300" y1="0" x2="300" y2="220" stroke="#14532D" stroke-width="0.4" opacity="0.15"/>
+  <!-- icon circle -->
+  <circle cx="200" cy="100" r="52" fill="#14532D" opacity="0.12"/>
+  <circle cx="200" cy="100" r="40" fill="#14532D" opacity="0.1"/>
+  <text x="200" y="116" text-anchor="middle" font-size="52" dominant-baseline="middle">🔐</text>
+  <!-- label pill -->
+  <rect x="130" y="155" width="140" height="28" rx="14" fill="#14532D" opacity="0.15"/>
+  <text x="200" y="174" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#14532D">Password Security</text>
+</svg></div>
+          <div class="related-photo-info"><div class="rp-title">Strong Passwords</div><div class="rp-meta">Lesson 16 · 8 min</div></div>
+        </a>
+        <a href="lesson-files-folders.html" class="related-photo-item">
+          <div class="related-photo-thumb"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 400 220" style="display:block;border-radius:8px;min-width:44px;" preserveAspectRatio="xMidYMid slice">
+  <rect width="400" height="220" fill="#FFF7ED"/>
+  <rect x="0" y="0" width="400" height="220" fill="#FFF7ED" opacity="0.6"/>
+  <!-- subtle grid pattern -->
+  <line x1="0" y1="55" x2="400" y2="55" stroke="#92400E" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="110" x2="400" y2="110" stroke="#92400E" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="165" x2="400" y2="165" stroke="#92400E" stroke-width="0.4" opacity="0.15"/>
+  <line x1="100" y1="0" x2="100" y2="220" stroke="#92400E" stroke-width="0.4" opacity="0.15"/>
+  <line x1="200" y1="0" x2="200" y2="220" stroke="#92400E" stroke-width="0.4" opacity="0.15"/>
+  <line x1="300" y1="0" x2="300" y2="220" stroke="#92400E" stroke-width="0.4" opacity="0.15"/>
+  <!-- icon circle -->
+  <circle cx="200" cy="100" r="52" fill="#92400E" opacity="0.12"/>
+  <circle cx="200" cy="100" r="40" fill="#92400E" opacity="0.1"/>
+  <text x="200" y="116" text-anchor="middle" font-size="52" dominant-baseline="middle">📂</text>
+  <!-- label pill -->
+  <rect x="130" y="155" width="140" height="28" rx="14" fill="#92400E" opacity="0.15"/>
+  <text x="200" y="174" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#92400E">Files & Folders</text>
+</svg></div>
+          <div class="related-photo-info"><div class="rp-title">Files &amp; Folders</div><div class="rp-meta">Lesson 7 · 9 min</div></div>
+        </a>
+      </div>
+      <div class="ad-zone tall">📢 Ad (300×250)</div>
+      <div style="background:var(--blue-lt); border:1.5px solid rgba(26,107,240,0.2); border-radius:var(--radius-lg); padding:20px; margin-top:20px;">
+        <h5 style="font-family:var(--font-d); color:var(--text); margin-bottom:8px;">⬅️ Previous Lesson</h5>
+        <p style="font-size:0.85rem; margin-bottom:12px;">Missed the hardware lesson? Start there first.</p>
+        <a href="lesson-hardware.html" class="btn btn-outline btn-sm" style="width:100%; justify-content:center;">Computer Hardware →</a>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-bottom">
+      <p style="color:rgba(255,255,255,0.5);">© 2026 LearnLu. <a href="../index.html" style="color:rgba(255,255,255,0.6);">Back to Home</a></p>
+      <p style="font-size:0.78rem; color:rgba(255,255,255,0.45); margin-top:4px;">Created &amp; maintained by <strong style="color:rgba(255,255,255,0.65); font-weight:600;">Taofeek Habeebullah Richard</strong> &mdash; Founder, LearnLu</p>
+    </div>
+  </div>
+  <div class="container" style="padding:12px 24px 16px;border-top:1px solid rgba(255,255,255,0.08);">
+      <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:10px;">
+        <a href="privacy.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;">Privacy Policy</a>
+        <a href="terms.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;">Terms of Service</a>
+        <a href="disclaimer.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;">Disclaimer</a>
+        <a href="contact.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;">Contact</a>
+        <a href="about.html" style="color:rgba(255,255,255,0.5);font-size:0.8rem;">About</a>
+      </div>
+  </div>
+</footer>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/theme-switcher.js"></script>
+<script src="../assets/js/cookie-consent.js"></script>
+</body>
+</html>
