@@ -1,4 +1,4 @@
 # LearnLu ads.txt
-# Replace pub-XXXXXXXXXXXXXXXX with your real AdSense publisher ID after approval
-# Format: google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
-google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+# Replace pub-G-1B1CZ4QX0W with your real AdSense publisher ID after approval
+# Format: google.com, pub-G-1B1CZ4QX0W, DIRECT, f08c47fec0942fa0
+google.com, pub-G-1B1CZ4QX0W, DIRECT, f08c47fec0942fa0
